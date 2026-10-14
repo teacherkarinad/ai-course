@@ -1,0 +1,1929 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>מנטורינג מתקדם בשילוב AI | קארינה דרור</title>
+<meta name="description" content="אתר הקורס לתלמידים: חמישה מפגשים, טכניקות פרומפט, כלים, פרויקט מסכם ורשימת בדיקה. מרצה: קארינה דרור.">
+<meta name="theme-color" content="#0B1622">
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAHtklEQVR42u2YW2yVWRXH1758l3M/bQ8tUGih7UAHChSQcFEEx8sQ5wlGHWeiY8SJUV98IfPgTCLGiaMYiRkTcRhjzEwMExVjookRIyGDOoUpwx1aCkppoe3pud/P3vvby4fD6Q3qJYIa3b/H79t7r3XW/q/LdwAMBoPBYDAYDAaDwWAwGAwGg8FgMPwPsQoAfP/PAfg1AHTP95L+p7ziwYgT7Fqz1VmweMFDNlUCADmvH4RxIJxTAACUQqPWsxYQxoBwiwKhBJXUqCT+qx4Rxkmkd/tRO9r0hBZCpU4di8pssviQAiCZG2izGmJlmUsnvGJOzAqAb0nXhkBnzxEAgOyFP24TibFk/SVz/Szcu/0wD4Z3eJXypdy5k0+pQrb6ILxC1BoBAAgqmBv1B6wAFm18rGHDzuNKlOIifufrhWvnf+CVC6qugABz3RUAAIRSPpUbtkPDvdsPu00te1W1kigOnHnugf14T2H27Mkn3Zal62Q2eUPm0uWHmgQICj2lKLOafa0d37MisY9l3j3xuCpkqxwANSBOLwUAwi0SWffel52m5r2eErn8pb711cRYYpZ0AhGH+YNRwpijpcirXDqrZXX6JgkBK9TgJ5xzr1Iqe6WitKJNQaCUy1Q8A4BQTY1fAa01EAKACMwftKjr94GnlMymSiwQtnkwEgNErfLphFcuqnuKmONSHoiEqe2EUWuhSrmUV5gt8xmyA/QU8GBoR6hny6FM//HP8bm6BEIhsmbzPqe59XlUSuWv9G+pjN8arS+xogtCoe713+ShxmepZQWBEADtgSoXTxWvX3y2PHrj2l01QXjN1qNWpGlXdWLkJURVchcu+4ZITLyWOn3s88EV677sa+36tspn3km9/ZvNWgr0t6/cE+hY/aYqZN8RyfFD7sL2A9R2YoAInqzeKF6/+FTp5sCZ+iWFVvZ+0m5Z+iJ3/KuAUgBE8IRIiYmRF3ID/a+iFHh/BXrgNMQ+61u8/Lt8ZnSAUBbu3vi0u2j5AVSyVLh24YPlketX5xRFy25s+ZInynGRyfySIGE8FNnNfcHN4VWbL3rFfLNIx7M1ERCK2gM7tvBFwi0ArUFrWVMSEgKAQMiMTkQIAURgrn+Tv23FJk9WM6pcusYcZwXldmeoe8NplU/HRHIiDajRisZ2czewSuXSx7QUt5g/uIW5vh5/e9ch1Cqfu3z6J/PXIAB3UdsX+YyoqEBXz0Er3PgMaA2qmDtRHB7om7tRpCZSmXN/6JLp+HBdkk5za0uk930D1HKi7uL2j4p0/EjNCOq6Gsq3/7yvdHPwsFcp1vKd1PKuvuauV1hfX5m8/Z3C1TMvaCmkf0nX9sAja48Tyqjb3LZLJCeOoOdB7kr/c4SyL4jkeKpetyIbdr7mNC7Yaze3foUOOUe0qKr5IkADofdPK4BSboWbnqmlI4IVatgV7FzzkcLQ+WNzN1bGbt6wIrGQ1dAcI4QwoJRrKeKU21HqBFZOVxMAQgmoYr4vd+nUwX+0haLWleLQ+f31olscHnzLt7TrEvMH1xKfv3Oqv6Unc8wfstyFba2EWX5ArbQoDwMCUG4vobZra1H15m3HhFh8zgOoTIx+jQcC23iw4cOBjtW/kvl0Z3VGDeDhRn9kzdY3rHDDnlre6am8AkQglLDZViioUv7tf2Z+QCXTXqVSmRERRK0mgBCgBFjtWAahRzd+2m1d/gq1nGitkCOA1vWuSoEQMv8wQkCXSv182k8Klfjtl7LnTu7nkaZI9D07rzFuN4ce3fQ7r5Dtrd0GgdAjvV+1G2J7RD7TVxw8+3GvUsoAITSydttveTC85b62ELwH0MtmTa1Oy5J2/7Lu19FTUBg6/7iYvNOHWnu+JZ27/W0r3kD9t00SQqASH/3+rEPLtwZfQe2BTMezhYGzjyEgcJ+vO9Sz5VXCLQKEAPMFNiEieIXM8cr4rVGZSRRQSkG5tQgQ/m3wQLgDEAC1ylRu/+WESE/mZDZZpJazFMjfmUQpA1XM/L48cv1PHAAI1JUyQzLlkaHLPBR9OrCs+4jT1PyZUPfGt3KX+n4kc8mjVrTxA07T4n3R9TsEKjFhL2h9nlh2e32AnI4yZXC3sN87mwADQoCQ6eELCCFACODcNKoVKQ6E1PYBgMgkLgJqoMyOhtdv/4VMT/7MCjd+yI40fQq1BkIJv/8YzkALMZK73P8JLSqaAmqBSsZRiTjMrMgAUBg8+2Y1PvoyShF3F7V/y9fa0ZkfPHuoPDa8H8EruYva9rutHYdEcuygSI4fQO3FUavsjIkvgUrGEVXmHkc05lDJuNZyYuqh1mX0ZByUugMzprNaGVCTqGQctZcFABCJ8UR+4N2tXqV0wQpFnwi0r/wx4SxWHB54UmsV1566Xe8qQIATbnFCKYh0/Ifp/uOr652DUMsmxHI4AICuliV66p4PF+r4OBAA0BrrrY8Fwja1HEfLatUr5gR1XEq5zbSSnq6WNQAA8wUYUErRU1pXyt7sCc5HCecMtEavUlKACNR2KLFsBog1O1MxIMB8fg6UElRq6vxa63Mp8wX9iFp7xVwZUCP1BSxABF0pSdT6pyzU8HPfwrYxmZ68KlLjiYf76fHfRw8AuOZ/IYPBYDAYDAaDwWAwGAwGg8FgMBjgryhP81TJnWF4AAAAAElFTkSuQmCC">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F4F6F8; --card:#FFFFFF; --ink:#12222E; --muted:#4E6473; --line:#DCE3E8;
+    --brand:#0E4A5C; --brand-2:#12718A; --cyan:#0E7C8C; --cyan-soft:#E4F1F3;
+    --dark:#0B1622; --dark-2:#122636; --amber-soft:#FDF3E2; --amber-ink:#845914;
+    --green:#2F6B49; --red:#A8412F;
+    --radius:14px; --soft:0 1px 2px rgba(18,34,46,.05), 0 10px 24px -18px rgba(18,34,46,.5);
+    --maxw:1140px; --fs:17px; --lh:1.85; --font:'Heebo','Segoe UI',Arial,sans-serif;
+  }
+  /* ===== מצבי נגישות ===== */
+  html[data-fs="1"]{font-size:112.5%} html[data-fs="2"]{font-size:125%} html[data-fs="3"]{font-size:140%}
+  html[data-readable] body{font-family:Arial,Verdana,'Segoe UI',sans-serif; letter-spacing:.01em}
+  html[data-spacing] body{line-height:2.15; word-spacing:.12em}
+  html[data-links] a:not(.btnish){text-decoration:underline !important; text-underline-offset:3px}
+  html[data-contrast]{--bg:#000; --card:#000; --ink:#FFF; --muted:#F2F2F2; --line:#FFF;
+    --brand:#FFE44D; --brand-2:#FFE44D; --cyan:#FFE44D; --cyan-soft:#000; --dark:#000; --dark-2:#000;
+    --amber-soft:#000; --amber-ink:#FFE44D; --green:#7CFF9B; --red:#FF9B8A; --soft:none}
+  html[data-contrast] body{background:#000}
+  html[data-contrast] .card,html[data-contrast] .tech,html[data-contrast] .node-card,
+  html[data-contrast] .tablewrap,html[data-contrast] .callout,html[data-contrast] .band,
+  html[data-contrast] .check div,html[data-contrast] ol.rules li,html[data-contrast] .qcard,
+  html[data-contrast] .tool,html[data-contrast] .sidenav{border:2px solid #FFF; background:#000; color:#FFF}
+  html[data-contrast] .prompt{background:#000; border:2px solid #FFF}
+  html[data-contrast] .copy,html[data-contrast] .cta,html[data-contrast] 
+  html[data-contrast] img{filter:grayscale(1) contrast(1.2)}
+  html[data-noanim] *{animation:none !important; transition:none !important}
+
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth; scroll-padding-top:96px}
+  body{margin:0; background:var(--bg); color:var(--ink); font-family:var(--font);
+       font-size:var(--fs); line-height:var(--lh); -webkit-font-smoothing:antialiased}
+  h1,h2,h3{line-height:1.35; margin:0; font-weight:700}
+  p{margin:0 0 1em}
+  a{color:var(--brand)}
+  img{max-width:100%}
+  .sr-only{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden;
+           clip:rect(0 0 0 0); white-space:nowrap; border:0}
+  .skip{position:absolute; right:12px; top:-60px; z-index:100; background:var(--brand); color:#fff;
+        padding:10px 18px; border-radius:0 0 10px 10px; transition:top .15s}
+  .skip:focus{top:0}
+  :focus-visible{outline:3px solid var(--cyan); outline-offset:3px; border-radius:4px}
+  html[data-contrast] :focus-visible{outline-color:#FFE44D}
+  .pagewrap{max-width:var(--maxw); margin:0 auto; padding:0 22px}
+
+  /* ===== סרגל עליון ===== */
+  .bar{position:sticky; top:0; z-index:60; background:var(--dark); color:#EAF2F6; border-bottom:1px solid rgba(255,255,255,.1)}
+  html[data-contrast] .bar{background:#000; border-bottom:2px solid #FFF; color:#FFF}
+  .bar-in{max-width:var(--maxw); margin:0 auto; padding:9px 22px; display:flex; align-items:center; gap:12px}
+  .brand{display:flex; align-items:center; gap:14px; text-decoration:none; color:inherit; margin-left:auto}
+  .brand img{height:30px; display:block; filter:brightness(0) invert(1)}
+  html[data-contrast] .brand img{filter:brightness(0) invert(1)}
+  .brand span{font-weight:700; font-size:16px; white-space:nowrap}
+  .barbtns{display:flex; gap:6px; align-items:center}
+  .barbtn{display:inline-flex; align-items:center; gap:7px; background:transparent; border:1px solid rgba(255,255,255,.22);
+          color:#EAF2F6; font-family:inherit; font-size:14.5px; padding:7px 13px; border-radius:999px; cursor:pointer; text-decoration:none}
+  .barbtn:hover{background:rgba(255,255,255,.12)}
+  .barbtn svg{width:19px; height:19px}
+  .barbtn[aria-expanded="true"]{background:var(--cyan); border-color:var(--cyan); color:#fff}
+  .barbtn[aria-current="page"]{background:var(--cyan); border-color:var(--cyan); color:#fff}
+  .barbtn--icon{padding:7px 11px}
+  html[data-contrast] .barbtn{border:2px solid #FFF; color:#FFF}
+
+  .menu,.acc{position:absolute; top:calc(100% + 8px); background:var(--card); color:var(--ink);
+             border:1px solid var(--line); border-radius:var(--radius); box-shadow:0 18px 40px -20px rgba(0,0,0,.55);
+             padding:10px; min-width:280px; z-index:70}
+  .menu[hidden],.acc[hidden]{display:none}
+  .menuwrap{position:relative}
+  .menu ul{list-style:none; margin:0; padding:0}
+  .menu a{display:block; padding:9px 14px; border-radius:9px; text-decoration:none; color:var(--ink); font-size:16px}
+  .menu a:hover{background:var(--cyan-soft)}
+  .menu a[aria-current="page"]{background:var(--brand); color:#fff}
+  .acc{width:310px}
+  .acc h2{font-size:16.5px; margin:4px 6px 10px}
+  .accrow{display:flex; gap:8px; margin-bottom:8px; flex-wrap:wrap}
+  .acc button{font-family:inherit; font-size:14.5px; padding:8px 12px; border-radius:9px;
+              border:1px solid var(--line); background:var(--card); color:var(--ink); cursor:pointer; flex:1 1 auto}
+  .acc button:hover{border-color:var(--brand)}
+  .acc button[aria-pressed="true"]{background:var(--brand); color:#fff; border-color:var(--brand)}
+  .acc .reset{background:var(--cyan-soft); border-color:var(--cyan)}
+  .acc-note{font-size:13px; color:var(--muted); margin:6px 6px 0}
+
+  /* ===== דף הבית ===== */
+  .hero{position:relative; background:linear-gradient(150deg,#0B1622 0%,#102A3A 55%,#0E3A47 100%); color:#EAF2F6; overflow:hidden}
+  html[data-contrast] .hero{background:#000; border-bottom:2px solid #FFF}
+  #neuralnet{position:absolute; inset:0; width:100%; height:100%; display:block}
+  .hero-inner{position:relative; z-index:2; max-width:var(--maxw); margin:0 auto; padding:44px 22px 40px;
+              display:grid; gap:26px; grid-template-columns:1fr}
+  @media (min-width:900px){ .hero-inner{grid-template-columns:1.15fr auto; align-items:center; padding:56px 22px 52px} .tutor{justify-self:end} }
+  .hero-text{max-width:52ch}
+  .hero-kicker{display:inline-block; font-size:13.5px; letter-spacing:.08em; color:#8FD3DE;
+               border:1px solid rgba(143,211,222,.45); padding:4px 13px; border-radius:999px; margin:0 0 16px}
+  .hero h1{font-size:clamp(30px,5vw,52px); font-weight:900; line-height:1.2}
+  .grad{color:#6FD3E3}
+  html[data-contrast] .grad,html[data-contrast] .hero-kicker{color:#FFE44D; border-color:#FFE44D}
+  .hero-lede{font-size:18.5px; color:#C6DAE4; max-width:44ch; margin:16px 0 22px}
+  .cta{display:inline-block; background:#6FD3E3; color:#08222C; font-weight:700; text-decoration:none;
+       padding:12px 26px; border-radius:999px}
+  .cta:hover{background:#8CE0EE}
+  .tutor{display:inline-flex; gap:16px; align-items:center; background:rgba(255,255,255,.07);
+         border:1px solid rgba(255,255,255,.16); border-radius:18px; padding:18px 22px; backdrop-filter:blur(4px)}
+  html[data-contrast] .tutor{background:#000; border:2px solid #FFF}
+  .tutor-img{width:84px; height:84px; border-radius:50%; flex:0 0 auto; border:2px solid rgba(143,211,222,.6)}
+  .tutor-txt h2{font-size:20px; white-space:nowrap}
+  .tutor-role{color:#8FD3DE; font-size:15px; margin:3px 0 0}
+  .tutor-txt p{font-size:15.5px; color:#C6DAE4; margin:0 0 8px; line-height:1.75}
+  .tutor-txt p:last-child{margin-bottom:0}
+
+  /* ===== מפת המסלול (גרפית) ===== */
+  .route{padding:34px 0 10px}
+  .route-head{margin-bottom:26px}
+  .route-head h2{font-size:clamp(23px,3vw,30px)}
+  .route-head p{color:var(--muted); margin:6px 0 0; max-width:60ch}
+
+  .routemap{list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:10px; align-items:stretch}
+  .station{position:relative; flex:1 1 158px; min-width:158px}
+  /* הקו המחבר בין התחנות */
+  .station::before{content:""; position:absolute; top:29px; left:50%; width:100%; height:3px;
+    background:linear-gradient(to left,var(--cyan),var(--brand-2)); opacity:.45; z-index:0}
+  .station:first-child::before{display:none}
+  .station--final::before{background:linear-gradient(to left,var(--cyan),#7FC9A6)}
+  html[data-contrast] .station::before{background:#FFE44D; opacity:1}
+
+  .station-link{position:relative; z-index:1; display:flex; flex-direction:column; align-items:center;
+    gap:12px; text-decoration:none; color:inherit; height:100%}
+  .station-dot{position:relative; width:60px; height:60px; border-radius:50%;
+    background:linear-gradient(150deg,var(--brand) 0%,var(--brand-2) 100%); color:#fff;
+    display:flex; align-items:center; justify-content:center; flex:0 0 auto;
+    box-shadow:0 0 0 6px var(--bg), 0 8px 18px -10px rgba(14,74,92,.8);
+    transition:transform .2s ease, box-shadow .2s ease}
+  .station-dot svg{width:27px; height:27px}
+  .station--final .station-dot{background:linear-gradient(150deg,var(--cyan) 0%,#2F8F72 100%)}
+  html[data-contrast] .station-dot{background:#000; border:3px solid #FFE44D; color:#FFE44D; box-shadow:none}
+  .station-num{position:absolute; top:-4px; right:-4px; min-width:23px; height:23px; padding:0 5px;
+    border-radius:999px; background:var(--card); color:var(--brand); border:2px solid var(--cyan);
+    font-size:13px; font-weight:700; display:flex; align-items:center; justify-content:center}
+  html[data-contrast] .station-num{background:#000; color:#FFE44D; border-color:#FFF}
+  .station-link:hover .station-dot,.station-link:focus-visible .station-dot{transform:translateY(-4px)}
+
+  .station-card{display:flex; flex-direction:column; align-items:center; text-align:center; gap:3px;
+    background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+    padding:14px 12px 12px; box-shadow:var(--soft); width:100%; flex:1 1 auto}
+  .station-link:hover .station-card{border-color:var(--brand)}
+  .station-date{font-size:12.5px; color:var(--cyan); font-weight:500}
+  .station-topic{font-size:16px; font-weight:700; color:var(--brand); line-height:1.35}
+  .station-sub{font-size:13.5px; color:var(--muted); line-height:1.55}
+  .station-btn{margin-top:auto; padding-top:10px; font-size:14px; font-weight:500; color:var(--brand)}
+  .station-btn::after{content:" ←"}
+
+  @media (max-width:719px){
+    .routemap{flex-direction:column; gap:0}
+    .station{flex:0 0 auto; min-width:0}
+    .station::before{top:-12px; bottom:auto; right:29px; left:auto; width:3px; height:calc(100% + 12px)}
+    .station-link{flex-direction:row; align-items:flex-start; gap:14px; padding-bottom:14px}
+    .station-dot{width:58px; height:58px}
+    .station-card{align-items:flex-start; text-align:right; padding:12px 16px}
+  }
+
+  .quickrow{padding:26px 0 44px}
+  .quick-title{font-size:19px; margin-bottom:12px}
+  .quickgrid{display:grid; gap:12px; grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+  .qcard{display:block; background:var(--card); border:1px solid var(--line); border-right:3px solid var(--cyan);
+         border-radius:12px; padding:14px 16px; text-decoration:none; color:inherit; box-shadow:var(--soft)}
+  .qcard:hover{border-right-color:var(--brand)}
+  .qcard b{display:block; font-size:16.5px; color:var(--brand)}
+  .qcard small{color:var(--muted); font-size:14px}
+
+  /* ===== דפים פנימיים ===== */
+  .page{outline:none}
+  body.js .page{display:none}
+  body.js .page.active{display:block}
+  .phead{padding:26px 0 18px}
+  .back{display:inline-flex; align-items:center; gap:6px; font-size:14.5px; color:var(--muted); text-decoration:none;
+        background:var(--card); border:1px solid var(--line); border-radius:999px; padding:6px 14px; margin-bottom:16px}
+  .back svg{width:16px; height:16px}
+  .back:hover{border-color:var(--brand); color:var(--brand)}
+  .phead-date{font-size:14px; color:var(--cyan); font-weight:500; margin:0}
+  .phead h1{font-size:clamp(25px,4vw,38px); margin:4px 0 0}
+  .phead-intro{color:var(--muted); max-width:62ch; margin:12px 0 0; font-size:17.5px}
+
+  .layout{display:grid; grid-template-columns:1fr; gap:22px; padding-bottom:40px}
+  @media (min-width:900px){ .layout{grid-template-columns:236px minmax(0,1fr); gap:32px} }
+  .layout--full{grid-template-columns:minmax(0,1fr) !important}
+  .sidenav{align-self:start; position:sticky; top:92px; background:var(--card); border:1px solid var(--line);
+           border-radius:var(--radius); padding:14px 12px; box-shadow:var(--soft)}
+  .sidenav-title{font-size:13px; color:var(--muted); margin:0 6px 8px; letter-spacing:.04em}
+  .sidenav ul{list-style:none; margin:0; padding:0}
+  .sidenav a{display:block; padding:8px 12px; border-radius:9px; font-size:15.5px; color:var(--muted); text-decoration:none;
+             border-right:3px solid transparent}
+  .sidenav a:hover{background:var(--cyan-soft); color:var(--brand)}
+  .sidenav a[aria-current="true"]{background:var(--cyan-soft); color:var(--brand); border-right-color:var(--cyan); font-weight:500}
+  @media (max-width:899px){
+    .sidenav{position:static; padding:10px}
+    .sidenav ul{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:4px}
+  }
+  .pagebody{min-width:0}
+  .block{padding:6px 0 26px}
+  .block+.block{border-top:1px solid var(--line); padding-top:26px}
+
+  /* ===== רכיבי תוכן ===== */
+  .bhead{display:flex; align-items:center; gap:12px; margin-bottom:8px; flex-wrap:wrap}
+  .bhead h2{font-size:clamp(20px,2.6vw,26px)}
+  .bicon{width:40px; height:40px; flex:0 0 auto; border-radius:12px; background:var(--cyan-soft); color:var(--brand);
+         display:flex; align-items:center; justify-content:center}
+  .bicon svg{width:22px; height:22px}
+  html[data-contrast] .bicon{border:2px solid #FFF}
+  .bsub{color:var(--muted); max-width:62ch; margin-bottom:18px; font-size:16.5px}
+  .grid{display:grid; gap:14px}
+  .g2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+  .g3{grid-template-columns:repeat(auto-fit,minmax(225px,1fr))}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:20px 22px; box-shadow:var(--soft)}
+  .card h3{font-size:19px; margin-bottom:8px; color:var(--brand)}
+  .card p:last-child,.card ul:last-child,.card ol:last-child{margin-bottom:0}
+  .card ul,.card ol{margin:0; padding-right:20px; color:var(--muted)}
+  .card li{margin-bottom:4px}
+  .tag{display:inline-block; font-size:12.5px; color:var(--brand); background:var(--cyan-soft); padding:3px 12px;
+       border-radius:999px; margin-bottom:10px}
+  html[data-contrast] .tag{border:1px solid #FFF; color:#FFE44D}
+  .mini{font-size:14.5px; color:var(--muted)}
+
+  ol.rules{counter-reset:r; list-style:none; margin:0; padding:0; display:grid; gap:10px}
+  ol.rules li{counter-increment:r; background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+              padding:16px 20px; position:relative; padding-right:64px; box-shadow:var(--soft)}
+  ol.rules li::before{content:counter(r); position:absolute; right:18px; top:17px; width:30px; height:30px;
+              display:flex; align-items:center; justify-content:center; background:var(--cyan-soft); color:var(--brand);
+              border-radius:50%; font-weight:700; font-size:14.5px}
+  ol.rules b{display:block; font-size:17.5px; color:var(--brand)}
+  ol.rules span{color:var(--muted); font-size:16px}
+
+  .tech{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--soft);
+        display:flex; flex-direction:column; overflow:hidden}
+  .tech-top{padding:20px 22px 16px}
+  .tech-icon{width:42px; height:42px; border-radius:12px; background:var(--cyan-soft); color:var(--brand);
+             display:flex; align-items:center; justify-content:center; margin-bottom:10px}
+  .tech-icon svg{width:23px; height:23px}
+  .tech-name{font-size:12.5px; letter-spacing:.06em; color:var(--muted); direction:ltr; text-align:right}
+  .tech h3{font-size:21px; margin:3px 0 8px; color:var(--brand)}
+  .tech-when{font-size:16px; color:var(--muted); margin:0}
+  .flow{display:flex; gap:6px; flex-wrap:wrap; margin-top:14px}
+  .flow span{font-size:12.5px; color:var(--muted); background:var(--bg); border:1px solid var(--line); padding:3px 11px; border-radius:999px}
+  .prompt{margin-top:auto; padding:18px 22px 20px; background:var(--cyan-soft); border-top:1px solid var(--line)}
+  .prompt-label{font-size:12.5px; color:var(--muted); margin-bottom:7px}
+  .prompt pre{margin:0 0 12px; white-space:pre-wrap; font-family:var(--font); font-size:15.5px; line-height:1.8; color:var(--ink)}
+  .copy{background:var(--brand); color:#fff; border:none; font-family:inherit; font-size:14px; font-weight:500;
+        padding:8px 20px; border-radius:999px; cursor:pointer}
+  .copy:hover{background:var(--brand-2)}
+  .copy[data-done="1"]{background:var(--green)}
+
+  .tool{display:flex; flex-direction:column; gap:2px; background:var(--card); border:1px solid var(--line);
+        border-radius:var(--radius); padding:16px 18px; text-decoration:none; color:inherit; box-shadow:var(--soft)}
+  .tool:hover{border-color:var(--brand)}
+  .tool-icon{width:32px; height:32px; border-radius:10px; background:var(--cyan-soft); color:var(--brand);
+             display:flex; align-items:center; justify-content:center; margin-bottom:7px}
+  .tool-icon svg{width:17px; height:17px}
+  .tool b{font-size:17px; color:var(--brand)}
+  .tool small{color:var(--muted); font-size:14.5px; line-height:1.65}
+  .tool .url{direction:ltr; text-align:right; font-size:12.5px; color:var(--muted); word-break:break-all; margin-top:3px}
+
+  .tablewrap{overflow-x:auto; background:var(--card); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--soft)}
+  table{border-collapse:collapse; width:100%; min-width:520px}
+  th,td{padding:12px 16px; text-align:right; border-bottom:1px solid var(--line); font-size:16px; vertical-align:top}
+  thead th{background:var(--cyan-soft); color:var(--brand); font-size:16px}
+  tbody tr:last-child td,tbody tr:last-child th{border-bottom:none}
+  tbody th{font-weight:500; width:180px}
+  .yes{color:var(--green); font-weight:700}
+  .no{color:var(--red); font-weight:700}
+
+  .callout{display:flex; gap:16px; align-items:flex-start; background:var(--amber-soft); border:1px solid #F0DCB8;
+           border-radius:var(--radius); padding:20px 22px}
+  .callout-art{flex:0 0 auto; color:var(--amber-ink)}
+  .callout-art svg{width:38px; height:38px}
+  .callout h3{color:var(--amber-ink); font-size:19px; margin-bottom:6px}
+  .callout p{color:#67501F; margin:0}
+  .callout p+p{margin-top:9px}
+  .callout .k{color:var(--amber-ink); font-weight:700}
+  html[data-contrast] .callout p,html[data-contrast] .callout h3,html[data-contrast] .callout .k{color:#FFE44D}
+
+  .band{display:flex; align-items:center; gap:16px; background:var(--card); border:1px solid var(--line);
+        border-radius:var(--radius); padding:18px 20px; box-shadow:var(--soft)}
+  .band svg{flex:0 0 auto; width:70px; height:70px; color:var(--brand)}
+  .band p{margin:0; color:var(--muted); font-size:16px}
+  .band b{color:var(--brand)}
+
+  .check{display:grid; gap:9px}
+  .check div{background:var(--card); border:1px solid var(--line); border-radius:11px; padding:13px 18px;
+             padding-right:52px; position:relative; font-size:16px; box-shadow:var(--soft)}
+  .check div::before{content:"✓"; position:absolute; right:16px; top:12px; width:23px; height:23px;
+             display:flex; align-items:center; justify-content:center; background:var(--cyan-soft); color:var(--brand);
+             border-radius:50%; font-size:13px; font-weight:700}
+
+  .nextprev{display:flex; gap:12px; flex-wrap:wrap; margin-top:10px; padding-top:22px; border-top:1px solid var(--line)}
+  .nextprev a{flex:1 1 220px; background:var(--card); border:1px solid var(--line); border-radius:12px;
+              padding:13px 17px; text-decoration:none; color:inherit; box-shadow:var(--soft)}
+  .nextprev a:hover{border-color:var(--brand)}
+  .nextprev small{display:block; color:var(--muted); font-size:13.5px}
+  .nextprev b{color:var(--brand); font-weight:500; font-size:16px}
+
+  footer{background:var(--dark); color:#C6DAE4; padding:28px 0 36px}
+  html[data-contrast] footer{background:#000; border-top:2px solid #FFF; color:#FFF}
+  .footin{max-width:var(--maxw); margin:0 auto; padding:0 22px}
+  .footin a{color:#8FD3DE}
+  .footlogo{display:flex; align-items:center; gap:14px; margin-bottom:14px; font-size:17px}
+  .footlogo img{height:32px; display:block; filter:brightness(0) invert(1)}
+  .rights{margin:0; font-size:14px; color:#AFC4D1; max-width:95ch; line-height:1.8}
+  html[data-contrast] .rights{color:#FFF; border-top:2px solid #FFF}
+
+  @media print{
+    .bar,.back,.nextprev,.copy,.sidenav,.skip,#neuralnet{display:none !important}
+    body.js .page{display:block !important}
+    body{background:#fff; color:#000}
+    .hero{background:#fff; color:#000}
+    .card,.tech,.tablewrap,ol.rules li,.check div,.callout,.band{box-shadow:none; break-inside:avoid}
+  }
+  /* ===== התאמות לנייד ===== */
+  @media (max-width:719px){
+    html{scroll-padding-top:130px}
+    /* טבלאות: מעבר מגלילה לרוחב לכרטיסים מוערמים */
+    .tablewrap{overflow:visible; border:none; background:transparent; box-shadow:none; border-radius:0}
+    table.stacky{min-width:0; width:100%; display:block}
+    table.stacky thead{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap}
+    table.stacky tbody,table.stacky tr,table.stacky td,table.stacky th{display:block; width:auto}
+    table.stacky tr{background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+      box-shadow:var(--soft); padding:6px 4px; margin-bottom:10px}
+    table.stacky tr:last-child{margin-bottom:0}
+    table.stacky td,table.stacky th{border-bottom:1px solid var(--line); padding:9px 14px; font-size:15.5px}
+    table.stacky tr>*:last-child{border-bottom:none}
+    table.stacky tbody th{background:transparent; font-weight:700; color:var(--brand); font-size:16.5px}
+    table.stacky td[data-label]::before{content:attr(data-label); display:block; font-size:12.5px;
+      color:var(--muted); margin-bottom:2px}
+    /* תפריטים נפתחים — רוחב מלא כדי שלא ייחתכו */
+    .menu,.acc{position:fixed; top:auto; right:10px; left:10px; width:auto; min-width:0; max-height:70vh; overflow:auto}
+    .acc button{flex:1 1 44%}
+    .prompt pre,.card,.tech{overflow-wrap:anywhere}
+    .band svg{width:56px; height:56px}
+    .nextprev a{flex:1 1 100%}
+    .bicon{width:34px; height:34px}
+    .bicon svg{width:19px; height:19px}
+    .sidenav ul{grid-template-columns:1fr}
+  }
+  @media (max-width:640px){
+    :root{--fs:16.5px}
+    .bar-in{flex-wrap:wrap; gap:8px}
+    .brand span{display:none}
+    .barbtn{font-size:14px; padding:8px 10px}
+    .barbtn-txt{display:none}
+    .tutor{width:100%}
+    .tutor-img{width:68px; height:68px}
+    .tutor-txt h2{font-size:18px}
+    .tutor-role{font-size:14px}
+    .card,.tech-top,.callout,.prompt{padding-left:18px; padding-right:18px}
+    th,td{padding:10px 12px; font-size:15px}
+    tbody th{width:auto}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#maincontent">דילוג לתוכן הראשי</a>
+
+<header class="bar">
+  <div class="bar-in">
+    <a class="brand" href="#home">
+      <img src="data:image/png;base64,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" alt="">
+      <span>קארינה דרור</span>
+    </a>
+    <nav class="barbtns" aria-label="ניווט ראשי">
+      <a class="barbtn barbtn--icon" href="#home" data-nav="home" aria-label="דף הבית" title="דף הבית"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M4 10.5 12 4l8 6.5V19a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 19Z"/><path d="M9.8 20.5v-6h4.4v6"/></svg><span class="sr-only">דף הבית</span></a>
+      <span class="menuwrap">
+        <button class="barbtn" id="menubtn" aria-expanded="false" aria-controls="menu" aria-haspopup="true" title="המפגשים"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M8 3v4M16 3v4M3.5 10h17"/><path d="M7.5 13.5h3M7.5 17h3M14 13.5h2.5"/></svg> <span class="barbtn-txt">מפגשים</span></button>
+        <div class="menu" id="menu" hidden>
+          <ul>
+            <li><a href="#lesson1" data-nav="lesson1">מפגש 1 · צ׳אטבוטים ופרומפטים</a></li>
+            <li><a href="#lesson2" data-nav="lesson2">מפגש 2 · מצגות, אתרים ואפליקציות</a></li>
+            <li><a href="#lesson3" data-nav="lesson3">מפגש 3 · אקסל, סוכנים ואוטומציה</a></li>
+            <li><a href="#lesson4" data-nav="lesson4">מפגש 4 · תמונה, וידאו וקול</a></li>
+            <li><a href="#lesson5" data-nav="lesson5">מפגש 5 · אתיקה ואימות מידע</a></li>
+            <li><a href="#project" data-nav="project">הפרויקט המסכם</a></li>
+            <li><a href="#checklist" data-nav="checklist">רשימת בדיקה לפני הגשה</a></li>
+          </ul>
+        </div>
+      </span>
+      <a class="barbtn" href="#prompts" data-nav="prompts" title="טכניקות פרומפט"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M20 12a7 7 0 0 1-7 7H8l-4 3v-4.3A7 7 0 0 1 4 12a7 7 0 0 1 7-7h2a7 7 0 0 1 7 7Z"/><path d="M9.5 10a2.5 2.5 0 1 1 3.4 2.3c-.5.2-.9.7-.9 1.3v.3M12 16.6h.01"/></svg> <span class="barbtn-txt">טכניקות</span></a>
+      <a class="barbtn" href="#tools" data-nav="tools" title="כל הכלים"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M14.5 5.5a3.5 3.5 0 0 0 4.6 4.6L21 12l-8 8-2-2"/><path d="M8.5 3 3 8.5l3 3L11.5 6Z"/><path d="m6 11.5-3 3 3.5 3.5 3-3"/></svg> <span class="barbtn-txt">כלים</span></a>
+      <span class="menuwrap">
+        <button class="barbtn" id="accbtn" aria-expanded="false" aria-controls="accpanel" title="הגדרות נגישות"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="4.6" r="1.9"/><path d="M4.5 8.2c2.4.9 4.9 1.3 7.5 1.3s5.1-.4 7.5-1.3"/><path d="M12 9.5v5m0 0-3 6m3-6 3 6"/></svg> <span class="barbtn-txt">נגישות</span></button>
+        <div class="acc" id="accpanel" hidden role="dialog" aria-label="הגדרות נגישות">
+          <h2>הגדרות נגישות</h2>
+          <div class="accrow" role="group" aria-label="גודל טקסט">
+            <button type="button" data-fsdir="-1">א־ הקטן</button>
+            <button type="button" data-fsdir="0">100%</button>
+            <button type="button" data-fsdir="1">א+ הגדל</button>
+          </div>
+          <div class="accrow">
+            <button type="button" data-toggle="contrast" aria-pressed="false">ניגודיות גבוהה</button>
+            <button type="button" data-toggle="links" aria-pressed="false">הדגשת קישורים</button>
+          </div>
+          <div class="accrow">
+            <button type="button" data-toggle="readable" aria-pressed="false">גופן קריא</button>
+            <button type="button" data-toggle="spacing" aria-pressed="false">ריווח מוגדל</button>
+          </div>
+          <div class="accrow">
+            <button type="button" data-toggle="noanim" aria-pressed="false">עצירת אנימציות</button>
+            <button type="button" class="reset" id="accreset">איפוס</button>
+          </div>
+          <p class="acc-note">ההגדרות נשמרות בדפדפן שלכם. <a href="#accessibility" data-nav="accessibility">הצהרת נגישות</a></p>
+        </div>
+      
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main id="maincontent">
+
+<section class="page active" id="home" aria-labelledby="home-title" tabindex="-1">
+  <div class="hero">
+    <canvas id="neuralnet" aria-hidden="true"></canvas>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-kicker">קורס · 5 מפגשים · 2026</p>
+        <h1 id="home-title">מנטורינג מתקדם<br><span class="grad">בשילוב AI</span></h1>
+        <p class="hero-lede">שמחה שאתם כאן 👋 כל מה שעברנו יחד מחכה לכם במקום אחד — בשפה פשוטה, עם פרומפטים מוכנים להעתקה.</p>
+        <a class="cta" href="#lesson1">בואו נתחיל ממפגש 1</a>
+      </div>
+      <aside class="tutor" aria-label="על המרצה">
+        <img class="tutor-img" src="data:image/jpeg;base64,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" alt="קארינה דרור, מרצה הקורס">
+        <div class="tutor-txt">
+          <h2>קארינה דרור</h2>
+          <p class="tutor-role">מרצה בכירה ליישומי מחשב, דאטה ו-AI</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <div class="pagewrap">
+    <section class="route" aria-labelledby="route-title">
+      <div class="route-head">
+        <h2 id="route-title">מפת המסלול</h2>
+        <p>חמישה מפגשים ופרויקט מסכם. התקדמו לפי הסדר, או קפצו ישר לנושא שאתם צריכים עכשיו — שתי הדרכים טובות.</p>
+      </div>
+      <ol class="routemap">
+      <li class="station">
+        <a class="station-link" href="#lesson1" aria-label="מפגש 1, 17/08/2026: צ׳אטבוטים ופרומפטים">
+          <span class="station-dot"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M20 12a7 7 0 0 1-7 7H8l-4 3v-4.3A7 7 0 0 1 4 12a7 7 0 0 1 7-7h2a7 7 0 0 1 7 7Z"/><path d="M9.5 10a2.5 2.5 0 1 1 3.4 2.3c-.5.2-.9.7-.9 1.3v.3M12 16.6h.01"/></svg><span class="station-num">1</span></span>
+          <span class="station-card">
+            <span class="station-date">17/08/2026</span>
+            <span class="station-topic">צ׳אטבוטים ופרומפטים</span>
+            <span class="station-sub">כלים, פרויקטים ו-NotebookLM</span>
+            <span class="station-btn">כניסה</span>
+          </span>
+        </a>
+      </li>
+      <li class="station">
+        <a class="station-link" href="#lesson2" aria-label="מפגש 2, 20/08/2026: מצגות, אתרים ואפליקציות">
+          <span class="station-dot"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="m4 20 9-9M14.5 5.5l4 4"/><path d="M16.5 3.5 17 5l1.5.5L17 6l-.5 1.5L16 6l-1.5-.5L16 5Z"/><path d="M20 11l.4 1.1 1.1.4-1.1.4-.4 1.1-.4-1.1-1.1-.4 1.1-.4Z"/><path d="M6.5 4.5 7 6l1.5.5L7 7l-.5 1.5L6 7l-1.5-.5L6 6Z"/></svg><span class="station-num">2</span></span>
+          <span class="station-card">
+            <span class="station-date">20/08/2026</span>
+            <span class="station-topic">מצגות, אתרים ואפליקציות</span>
+            <span class="station-sub">Gamma, Napkin, Lovable, Base44</span>
+            <span class="station-btn">כניסה</span>
+          </span>
+        </a>
+      </li>
+      <li class="station">
+        <a class="station-link" href="#lesson3" aria-label="מפגש 3, 24/08/2026: אקסל, סוכנים ואוטומציה">
+          <span class="station-dot"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11M3 14.5h18"/></svg><span class="station-num">3</span></span>
+          <span class="station-card">
+            <span class="station-date">24/08/2026</span>
+            <span class="station-topic">אקסל, סוכנים ואוטומציה</span>
+            <span class="station-sub">מבנה נתונים וסוכנים חכמים</span>
+            <span class="station-btn">כניסה</span>
+          </span>
+        </a>
+      </li>
+      <li class="station">
+        <a class="station-link" href="#lesson4" aria-label="מפגש 4, 27/08/2026: תמונה, וידאו וקול">
+          <span class="station-dot"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M8 5v14M16 5v14M3 9.5h5M3 14.5h5M16 9.5h5M16 14.5h5"/></svg><span class="station-num">4</span></span>
+          <span class="station-card">
+            <span class="station-date">27/08/2026</span>
+            <span class="station-topic">תמונה, וידאו וקול</span>
+            <span class="station-sub">יצירה, הנפשה וקריינות</span>
+            <span class="station-btn">כניסה</span>
+          </span>
+        </a>
+      </li>
+      <li class="station">
+        <a class="station-link" href="#lesson5" aria-label="מפגש 5, 31/08/2026: אתיקה ואימות מידע">
+          <span class="station-dot"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M12 3.5 5 6.5v5.2c0 4.2 2.9 7.6 7 8.8 4.1-1.2 7-4.6 7-8.8V6.5Z"/><path d="m9.2 12 2 2 3.6-4"/></svg><span class="station-num">5</span></span>
+          <span class="station-card">
+            <span class="station-date">31/08/2026</span>
+            <span class="station-topic">אתיקה ואימות מידע</span>
+            <span class="station-sub">הזיות, פרטיות ודיפפייק</span>
+            <span class="station-btn">כניסה</span>
+          </span>
+        </a>
+      </li>
+        <li class="station station--final">
+          <a class="station-link" href="#project" aria-label="הפרויקט המסכם: אתגר המומחה">
+            <span class="station-dot"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="m12 3.6 2.4 5 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 9.4l5.4-.8Z"/></svg><span class="station-num">★</span></span>
+            <span class="station-card">
+              <span class="station-date">סיום</span>
+              <span class="station-topic">הפרויקט המסכם</span>
+              <span class="station-sub">אתגר המומחה: מחקר, יצירה ואימות</span>
+              <span class="station-btn">כניסה</span>
+            </span>
+          </a>
+        </li>
+      </ol>
+    </section>
+
+    <section class="quickrow" aria-labelledby="quick-title">
+      <h2 id="quick-title" class="quick-title">לעיון מהיר</h2>
+      <div class="quickgrid">
+        <a class="qcard" href="#prompts"><b>טכניקות פרומפט</b><small>7 טכניקות עם דוגמאות להעתקה</small></a>
+        <a class="qcard" href="#tools"><b>כל הכלים</b><small>23 קישורים במקום אחד</small></a>
+        <a class="qcard" href="#checklist"><b>רשימת בדיקה</b><small>מה לבדוק לפני שמגישים</small></a>
+        <a class="qcard" href="#copyright"><b>זכויות יוצרים</b><small>תנאי שימוש בתכני האתר</small></a>
+      </div>
+    </section>
+  </div>
+</section>
+
+<section aria-labelledby="lesson1-title" class="page" id="lesson1" tabindex="-1">
+<div class="pagewrap">
+<header class="phead">
+<a class="back" href="#home"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15 6 9 12l6 6"></path></svg> חזרה לדף הבית</a>
+<p class="phead-date">מפגש 1 · 17/08/2026</p>
+<h1 id="lesson1-title">צ׳אטבוטים, פרומפטים ומקור משותף</h1>
+<p class="phead-intro">נכנסנו לכל אחד מהצ׳אטבוטים, פתחנו פרויקט והעלינו את אותו מקור — דוח WEF Future of Jobs Report 2025 — כדי לראות איך כל מודל מתמודד עם אותה משימה בדיוק.</p>
+</header>
+<div class="layout">
+<nav aria-label="ניווט בתוך העמוד" class="sidenav">
+<p class="sidenav-title">בעמוד הזה</p>
+<ul><li><a data-jump="lesson1-b1" href="#lesson1-b1">איך עובדים נכון עם בינה מלאכותית</a></li>
+<li><a data-jump="lesson1-b2" href="#lesson1-b2">מה עשינו במפגש</a></li>
+<li><a data-jump="lesson1-b3" href="#lesson1-b3">שלושת התרגילים</a></li></ul>
+</nav>
+<div class="pagebody">
+<section aria-labelledby="lesson1-b1-h" class="block" id="lesson1-b1">
+<div class="bhead">
+<span aria-hidden="true" class="bicon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M9 18h6M10 21h4"></path><path d="M12 3a6 6 0 0 0-3.5 10.9c.5.4.8 1 .8 1.6v.5h5.4v-.5c0-.6.3-1.2.8-1.6A6 6 0 0 0 12 3Z"></path></svg></span>
+<h2 id="lesson1-b1-h">איך עובדים נכון עם בינה מלאכותית</h2>
+</div>
+<p class="bsub">חמישה הרגלים קטנים שעושים את ההבדל בין תשובה כללית לתשובה שבאמת עוזרת לכם.</p>
+<ol class="rules">
+<li><b>הגדירו הקשר ברור</b><span>מי הפונה, מה הסיטואציה ומה המטרה של השאלה.</span></li>
+<li><b>תנו למודל תפקיד</b><span>"אתה מנטור בכיר", "אתה רכז תוכנית" — כדי לקבל שפה מקצועית ומתאימה.</span></li>
+<li><b>בקשו מקורות או סימני ודאות</b><span>שאלו "מה המקור שלך?" או "ציין רמת ודאות".</span></li>
+<li><b>השוו בין כמה כלים</b><span>אותו פרומפט בשני מודלים חושף מיד את הפערים ביניהם.</span></li>
+<li><b>שמרו פרומפטים שעבדו</b><span>הם ישמשו אתכם שוב — זה הנכס האמיתי שלכם מהקורס.</span></li>
+</ol>
+<div class="grid g2" style="margin-top:16px">
+<div class="card">
+<span class="tag">Hallucinations</span>
+<h3>הזיות ואימות מידע</h3>
+<p>תשובות שנשמעות אמינות — אך אינן נכונות. לדוגמה: המודל "ממציא" מערכת שמתאימה אוטומטית מנטור לכל סטודנט בזמן אמת. בפועל אין מערכת כזו בתוכנית.</p>
+<p style="margin-bottom:0"><b>מה עושים:</b> מבקשים מקורות, משווים בין כלים, ומוסיפים להנחיה — "אם אינך בטוח בתשובה, ציין זאת במפורש".</p>
+</div>
+<div class="callout">
+<div aria-hidden="true" class="callout-art"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M12 3v3M6 8.5 4 14h4l-2-5.5ZM18 8.5 16 14h4l-2-5.5Z"></path><path d="M4 14a2.6 2.6 0 0 0 4 0M16 14a2.6 2.6 0 0 0 4 0"></path><path d="M6.5 7.5 12 6l5.5 1.5M12 6v13M8 20h8"></path></svg></div>
+<div>
+<h3>הכלל שמעל הכול</h3>
+<p>הבינה המלאכותית <span class="k">מסייעת</span> — האדם <span class="k">שופט</span>. אתם אחראים למבנה, לניקוי ולאימות; הכלי אחראי לאיתור בעיות, איחוד וסיכום.</p>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="lesson1-b2-h" class="block" id="lesson1-b2">
+<div class="bhead">
+<span aria-hidden="true" class="bicon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><rect height="12.5" rx="2" width="18" x="3" y="4"></rect><path d="M9 20h6M12 16.5V20M7.5 9.5h5M7.5 12.5h9"></path></svg></span>
+<h2 id="lesson1-b2-h">מה עשינו במפגש</h2>
+</div>
+<div class="grid g2">
+<div class="card">
+<span class="tag">שלב 1</span>
+<h3>פרויקט לכל כלי</h3>
+<p>בכל צ׳אטבוט פתחנו מרחב עבודה בשם "מנטורינג מתקדם AI" והעלינו אליו את קובץ ה-PDF: ב-ChatGPT דרך Projects, ב-Gemini דרך תיקיית Notebook, ב-Claude דרך Projects ו-Context, וב-Copilot וב-Perplexity דרך "יצירת פרויקט".</p>
+<p style="margin-bottom:0">היתרון: כל השיחות, הקבצים וההנחיות נשמרים יחד, וההקשר עובר בין שיחה לשיחה.</p>
+</div>
+<div class="card">
+<span class="tag">שלב 2</span>
+<h3>NotebookLM — מחברת חכמה</h3>
+<p>המחברת מחולקת לשלושה חלקים: <b>מקורות | צ׳אט | סטודיו</b>. מעלים מקורות (PDF, טקסט, מסמכים, אודיו, תמונות, קישורים) ומייצרים מהם תוצרים: מצגת, אינפוגרפיקה, סקירה קולית, וידאו, מפת חשיבה, דוחות, כרטיסי עזר, טבלת נתונים ובוחן.</p>
+<p style="margin-bottom:0">את כל התוצרים אפשר להוריד או לשתף.</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="lesson1-b3-h" class="block" id="lesson1-b3">
+<div class="bhead">
+<span aria-hidden="true" class="bicon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M9 4h6v2.5H9z"></path><path d="M15 5h2.5A1.5 1.5 0 0 1 19 6.5v12A1.5 1.5 0 0 1 17.5 20h-11A1.5 1.5 0 0 1 5 18.5v-12A1.5 1.5 0 0 1 6.5 5H9"></path><path d="m8.5 13 2 2 4-4.5"></path></svg></span>
+<h2 id="lesson1-b3-h">שלושת התרגילים</h2>
+</div>
+<div class="band" style="margin-bottom:20px">
+<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 90 70" xmlns="http://www.w3.org/2000/svg">
+<rect height="50" rx="5" width="40" x="8" y="10"></rect>
+<path d="M16 24h24M16 33h20M16 42h24M16 51h14" opacity=".45"></path>
+<circle cx="66" cy="26" r="13"></circle><path d="m60.5 26 4 4 7.5-8"></path>
+<path d="M58 48h18M60 56h14" opacity=".45"></path>
+</svg>
+<p><b>אותו מקור, שלוש משימות, כל הצ׳אטבוטים.</b> כל תרגיל ביצענו בכל אחד מהצ׳אטבוטים — כך רואים בדיוק במה כל מודל חזק ובמה פחות.</p>
+</div>
+<div class="grid g3">
+<div class="card">
+<h3>תרגיל 1 · סיכום</h3>
+<p class="mini">סיכום המקור ב-10 משפטים בשפה פשוטה, ללא מושגים מקצועיים.</p>
+<ul>
+<li>לכל מונח מקצועי — הסבר קצר לצדו</li>
+<li>טבלת השוואה: מקצועות שייעלמו מול מקצועות בצמיחה</li>
+<li>ייצוא לקובץ Word מסודר: RTL, יישור לימין, כותרות</li>
+</ul>
+</div>
+<div class="card">
+<h3>תרגיל 2 · מצגת</h3>
+<p class="mini">מצגת בת 10 שקפים על מיומנויות העובד לשנת 2030.</p>
+<ul>
+<li>עיצוב נקי ומקצועי, יישור RTL</li>
+<li>גופן Arial וגדלים אחידים</li>
+<li>כלל 10/20/30 ומגבלת 7×7</li>
+</ul>
+</div>
+<div class="card">
+<h3>תרגיל 3 · אינפוגרפיקה</h3>
+<p class="mini">פלייר שמציג את המשרות שייעלמו מול המשרות שייווצרו.</p>
+<ul>
+<li>עיצוב מקצועי ונקי</li>
+<li>מספרים מרכזיים מתוך הדוח</li>
+<li>השוואה בין תוצרי הכלים השונים</li>
+</ul>
+</div>
+</div>
+</section>
+<nav aria-label="המשך ניווט" class="nextprev">
+<a href="#prompts"><small>קשור למפגש הזה</small><b>7 טכניקות לכתיבת פרומפטים ←</b></a>
+<a href="#lesson2"><small>המפגש הבא</small><b>מצגות, אתרים ואפליקציות ←</b></a>
+</nav>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="prompts-title" class="page" id="prompts" tabindex="-1">
+<div class="pagewrap">
+<header class="phead">
+<a class="back" href="#home"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15 6 9 12l6 6"></path></svg> חזרה לדף הבית</a>
+<p class="phead-date">לעיון מהיר</p>
+<h1 id="prompts-title">שבע טכניקות לכתיבת פרומפטים</h1>
+<p class="phead-intro">לכל טכניקה: מה הרעיון, מתי היא עוזרת, ופרומפט מוכן להעתקה בלחיצה. הדוגמאות מעולם המנטורינג — פשוט החליפו אותן לתחום שלכם.</p>
+</header>
+<div class="layout layout--full">
+<div class="pagebody">
+<section aria-labelledby="prompts-b1-h" class="block" id="prompts-b1">
+<div class="grid g2">
+<article class="tech">
+<div class="tech-top">
+<div aria-hidden="true" class="tech-icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M20 11.5a6.5 6.5 0 0 1-6.5 6.5H9l-4 3v-4.2A6.5 6.5 0 0 1 5 11.5 6.5 6.5 0 0 1 11.5 5h2A6.5 6.5 0 0 1 20 11.5Z"></path><path d="M10.3 9.8a2.2 2.2 0 1 1 2.9 2.1c-.4.2-.7.6-.7 1.1v.3"></path><path d="M12.5 15.4h.01"></path></svg></div>
+<div class="tech-name">Zero-shot</div>
+<h3>פרומפט ללא הקשר</h3>
+<p class="tech-when">שואלים את המודל שאלה ללא דוגמה קודמת. מקבלים תשובה כללית או בדיקת ידע ראשונית — טוב לפתיחה מהירה.</p>
+<div class="flow"><span>שאלה</span><span>תשובה כללית</span></div>
+</div>
+<div class="prompt">
+<div class="prompt-label">דוגמה</div>
+<pre>כתוב הודעה לסטודנטים בתוכנית מנטורינג מתקדם על דחיית מפגש ההנחיה השבועי בשל עדכון בלוח הזמנים.</pre>
+<button class="copy">העתקה</button>
+</div>
+</article>
+<article class="tech">
+<div class="tech-top">
+<div aria-hidden="true" class="tech-icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><rect height="8" rx="2" width="12" x="3.5" y="8.5"></rect><path d="M7 6h10.5A2.5 2.5 0 0 1 20 8.5V15"></path><path d="M6.5 12h6"></path></svg></div>
+<div class="tech-name">Few-shot</div>
+<h3>פרומפט עם דוגמאות</h3>
+<p class="tech-when">מציגים למודל כמה דוגמאות כדי ללמד אותו את הסגנון, הטון או המבנה הרצוי. מתאים להודעות חוזרות שצריכות להישמע אותו דבר.</p>
+<div class="flow"><span>דוגמה קיימת</span><span>הנחיה</span><span>טקסט חדש באותו סגנון</span></div>
+</div>
+<div class="prompt">
+<div class="prompt-label">דוגמה</div>
+<pre>כך אני רוצה שתנסח הודעה לסטודנטים:
+"מפגש מנטורינג מתקדם התקיים כמתוכנן. החומרים הועלו למרחב הלמידה. לכל שאלה — פנייה למנטור המלווה."
+
+עכשיו כתוב הודעה חדשה לסטודנטים על פתיחת ההרשמה למפגש ההנחיה הבא, באותו סגנון וטון.</pre>
+<button class="copy">העתקה</button>
+</div>
+</article>
+<article class="tech">
+<div class="tech-top">
+<div aria-hidden="true" class="tech-icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><circle cx="5" cy="17.5" r="2.2"></circle><circle cx="12" cy="12" r="2.2"></circle><circle cx="19" cy="6.5" r="2.2"></circle><path d="M6.8 16.1 10.3 13.6M13.8 10.5l3.4-2.5"></path></svg></div>
+<div class="tech-name">Chain of Thought</div>
+<h3>שרשרת חשיבה</h3>
+<p class="tech-when">מבקשים מהמודל להסביר את תהליך החשיבה צעד אחר צעד. מאפשר להציג תהליך עבודה מסודר, בדיקה או קבלת החלטות מקצועית.</p>
+<div class="flow"><span>שלב 1</span><span>שלב 2</span><span>שלב 3</span><span>מסקנה</span></div>
+</div>
+<div class="prompt">
+<div class="prompt-label">דוגמה</div>
+<pre>הסבר כיצד מנטור בתוכנית מנטורינג מתקדם צריך לטפל בפנייה של סטודנט שמתקשה בהתקדמות בפרויקט. שלב אחר שלב, כולל הקשבה ואיסוף מידע, אבחון החסם, הגדרת יעדים לפגישה, בניית תוכנית עבודה ותיעוד ההתקדמות.</pre>
+<button class="copy">העתקה</button>
+</div>
+</article>
+<article class="tech">
+<div class="tech-top">
+<div aria-hidden="true" class="tech-icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><circle cx="12" cy="8.5" r="3.5"></circle><path d="M5 20a7 7 0 0 1 14 0"></path><path d="M9.5 8h5"></path></svg></div>
+<div class="tech-name">Role Prompting</div>
+<h3>פרומפט לפי תפקיד</h3>
+<p class="tech-when">נותנים למודל זהות ותפקיד כדי להתאים את הטון, הסגנון והשפה לקהל היעד: מנטור בכיר, רכז תוכנית, מנחה פרויקט גמר.</p>
+<div class="flow"><span>זהות</span><span>קהל יעד</span><span>תשובה בשפה מתאימה</span></div>
+</div>
+<div class="prompt">
+<div class="prompt-label">דוגמה</div>
+<pre>אתה מנטור בכיר בתוכנית מנטורינג מתקדם עם ניסיון של 10 שנים. כתוב תשובה ברורה ומעודדת לסטודנט שדיווח על קושי חוזר בעמידה בלוחות הזמנים של הפרויקט.</pre>
+<button class="copy">העתקה</button>
+</div>
+</article>
+<article class="tech">
+<div class="tech-top">
+<div aria-hidden="true" class="tech-icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M19 12a7 7 0 0 1-11.9 5"></path><path d="M5 12a7 7 0 0 1 11.9-5"></path><path d="M17 4v3.5h-3.5M7 20v-3.5h3.5"></path></svg></div>
+<div class="tech-name">Iterative Refinement</div>
+<h3>שיפור הדרגתי</h3>
+<p class="tech-when">משפרים תשובה קיימת בשלבים עוקבים במקום לכתוב הכול מחדש. מאפשר ללטש ניסוח, להוסיף דיוק, או להפוך טקסט לשפה ברורה ומותאמת לקהל.</p>
+<div class="flow"><span>תשובה קיימת</span><span>הנחיית שיפור</span><span>גרסה מלוטשת</span></div>
+</div>
+<div class="prompt">
+<div class="prompt-label">דוגמה</div>
+<pre>קצר את התשובה ל-4 שורות, בשפה פשוטה, לסטודנט שדיווח על קושי חוזר בעמידה בלוחות הזמנים.</pre>
+<button class="copy">העתקה</button>
+</div>
+</article>
+<article class="tech">
+<div class="tech-top">
+<div aria-hidden="true" class="tech-icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><rect height="5.4" rx="1.4" width="5.4" x="2.8" y="9.5"></rect><rect height="5.4" rx="1.4" width="5.4" x="9.3" y="9.5"></rect><rect height="5.4" rx="1.4" width="5.4" x="15.8" y="9.5"></rect><path d="M8.6 12.2h.4M15.1 12.2h.4"></path></svg></div>
+<div class="tech-name">Prompt Chaining</div>
+<h3>שרשור פקודות</h3>
+<p class="tech-when">כמה פרומפטים עוקבים, כשכל תשובה משמשת בסיס לשאלה הבאה. כך בונים תהליך חשיבה מדורג ומעמיק מבלי להעמיס הכול על פרומפט אחד.</p>
+<div class="flow"><span>סכם</span><span>נתח</span><span>נסח מחדש</span></div>
+</div>
+<div class="prompt">
+<div class="prompt-label">דוגמה — שלחו שורה אחת בכל פעם</div>
+<pre>1. סכם פנייה של סטודנט על קושי חוזר בהתקדמות בפרויקט.
+2. הפק מתוך הסיכום את שלבי הליווי הנדרשים מהמנטור.
+3. כתוב גרסה קצרה וברורה לסטודנט בשפה פשוטה.</pre>
+<button class="copy">העתקה</button>
+</div>
+</article>
+<article class="tech">
+<div class="tech-top">
+<div aria-hidden="true" class="tech-icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M6 3.5h7.5L18 8v12.5H6z"></path><path d="M13.5 3.5V8H18"></path><circle cx="12" cy="14" r="2.6"></circle><path d="m14 16 1.8 1.8"></path></svg></div>
+<div class="tech-name">Context Enrichment</div>
+<h3>העשרת הקשר</h3>
+<p class="tech-when">מוסיפים מידע רקע רלוונטי כדי שהמודל יבין את הסיטואציה. ככל שהפרטים מדויקים יותר — התשובה מקצועית ומותאמת יותר למקרה.</p>
+<div class="flow"><span>הנחיה</span><span>פרטי המקרה</span><span>תשובה מותאמת</span></div>
+</div>
+<div class="prompt">
+<div class="prompt-label">דוגמה</div>
+<pre>בהתאם לנוהל הליווי בתוכנית המנטורינג המתקדם 2024, כתוב תשובה מותאמת לסטודנט שדיווח על קושי חוזר בעמידה בפרויקט.
+פרטים:
+סוג הפנייה: קושי חוזר בעמידה באבני דרך
+מסגרת: תוכנית מנטורינג מתקדם, פרויקט גמר
+פונה: סטודנט שנה ג׳, בליווי מזה חמישה חודשים
+זמן הפנייה: אתמול בשעה 22:15
+דחיפות: גבוהה
+תיעוד: שלוש דחיות של אבני דרך בחודש האחרון</pre>
+<button class="copy">העתקה</button>
+</div>
+</article>
+<article class="tech">
+<div class="tech-top">
+<div aria-hidden="true" class="tech-icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="m12 3 1.6 4.4L18 9l-4.4 1.6L12 15l-1.6-4.4L6 9l4.4-1.6Z"></path><path d="m18.5 15 .8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8Z"></path><path d="m5 14 .6 1.6 1.6.6-1.6.6L5 18.4l-.6-1.6-1.6-.6 1.6-.6Z"></path></svg></div>
+<div class="tech-name" style="direction:rtl">בונוס</div>
+<h3>שילוב טכניקות</h3>
+<p class="tech-when">הפרומפטים החזקים ביותר מחברים כמה טכניקות יחד: תפקיד + הקשר עשיר + בקשה לחשיבה בשלבים + הגבלת אורך. כך נראה פרומפט מלא.</p>
+<div class="flow"><span>תפקיד</span><span>הקשר</span><span>שלבים</span><span>פורמט</span></div>
+</div>
+<div class="prompt">
+<div class="prompt-label">תבנית</div>
+<pre>אתה [תפקיד] עם ניסיון ב[תחום].
+ההקשר: [מי הפונה, מה קרה, מתי, מה כבר נעשה].
+המשימה: [מה בדיוק לייצר].
+חשוב שלב אחר שלב לפני התשובה.
+פורמט: [אורך, מבנה, טון, קהל היעד].
+אם חסר לך מידע — שאל אותי לפני שתענה.</pre>
+<button class="copy">העתקה</button>
+</div>
+</article>
+</div>
+</section>
+<nav aria-label="המשך ניווט" class="nextprev">
+<a href="#lesson1"><small>מאיפה זה הגיע</small><b>מפגש 1 · צ׳אטבוטים ופרומפטים ←</b></a>
+<a href="#tools"><small>לעיון מהיר</small><b>כל הכלים במקום אחד ←</b></a>
+</nav>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="lesson2-title" class="page" id="lesson2" tabindex="-1">
+<div class="pagewrap">
+<header class="phead">
+<a class="back" href="#home"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15 6 9 12l6 6"></path></svg> חזרה לדף הבית</a>
+<p class="phead-date">מפגש 2 · 20/08/2026</p>
+<h1 id="lesson2-title">מצגות, אינפוגרפיקה, אתרים ואפליקציות</h1>
+<p class="phead-intro">מטקסט גולמי לתוצר מוגמר: מצגות ואתרים ב-Gamma, הפיכת טקסט לאינפוגרפיקה ב-Napkin, ואפליקציה ראשונה ב-Lovable וב-Base44.</p>
+</header>
+<div class="layout layout--full">
+<div class="pagebody">
+<section aria-labelledby="lesson2-b1-h" class="block" id="lesson2-b1">
+<div class="grid g2">
+<div class="card">
+<span class="tag">Gamma</span>
+<h3>מצגת, מסמך או אתר</h3>
+<p>ארבע דרכי התחלה: יצירה מתיאור, הדבקת טקסט, ייבוא קובץ או URL, ויצירה מתבנית. בוחרים מספר כרטיסים, סגנון ושפה — ומקבלים מתווה לעריכה לפני היצירה.</p>
+<ul>
+<li>ערכת נושא ניתנת להתאמה אישית (צבעים, גופנים, לוגו)</li>
+<li>בחרו גופן שנתמך גם ב-PowerPoint לפני הייצוא</li>
+<li>ייצוא ל-PDF, PowerPoint, Google Slides או PNG</li>
+<li>אפשר לשדרג אתר שנוצר ב-Gamma באמצעות Claude</li>
+</ul>
+</div>
+<div class="card">
+<span class="tag">Napkin</span>
+<h3>מטקסט לאינפוגרפיקה</h3>
+<p>מסמנים קטע טקסט ולוחצים על אייקון הברק — ומקבלים הצעות ויזואליות. <b>Ctrl+A</b> מסמן את כל הטקסט והופך את כולו.</p>
+<ul>
+<li>שלוש דרכים להתחיל: העלאת קובץ, כתיבה חופשית או יצירה עם AI</li>
+<li>עריכה: צבעים, גופנים, גודל, פריסה ואפקטים</li>
+<li>ייצוא: PNG, SVG, PDF, PPT — עם או בלי לוגו</li>
+<li>כשמשנים את צורת ההצגה — משתנה גם איכות ההבנה</li>
+</ul>
+</div>
+</div>
+<div class="card" style="margin-top:16px">
+<span class="tag">Lovable · Base44</span>
+<h3>אפליקציה ראשונה</h3>
+<p>לפני שבונים — כותבים אפיון. השתמשו בצ׳אטבוט כדי לכתוב את האפיון המלא (רעיון מרכזי, עקרונות UX, מסכי האפליקציה, מה המשתמש רואה בכל מסך), ובקשו ממנו "צור מוכן להעתקה" — ואז הדביקו את הפרומפט בכלי הבנייה.</p>
+<ul>
+<li>בקשו במפורש: ממשק בעברית ו-RTL, נתוני דוגמה, ניווט ברור, MVP מלא ועובד</li>
+<li>בדקו הכול לפני הפרסום — בחשבון החינמי אין מספיק קרדיטים לעבודה רציפה</li>
+<li>הוסיפו כפתור במסך הראשי שיאפשר הורדת האפליקציה למסך הבית</li>
+</ul>
+</div>
+<div class="card" style="margin-top:16px">
+<span class="tag">מושג מהשיעור</span>
+<h3>מה זה MVP?</h3>
+<p><b>MVP</b> = Minimum Viable Product, בעברית <b>מוצר מינימלי בר-קיימא</b> — הגרסה הכי קטנה של הרעיון שכבר עובדת ואפשר לתת למישהו להשתמש בה.</p>
+<p>במקום לבנות חודשיים אפליקציה מושלמת ואז לגלות שאף אחד לא צריך אותה, בונים תוך שעה את הפונקציה <b>האחת</b> שבגללה האפליקציה קיימת, נותנים לאנשים לנסות, ורק אז מוסיפים.</p>
+<div class="band" style="margin-top:16px">
+<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="width:180px; height:84px" viewbox="0 0 150 70" xmlns="http://www.w3.org/2000/svg">
+<circle cx="22" cy="46" r="15"></circle><path d="M22 34v24M10 46h24" opacity=".45"></path>
+<path d="M44 46h12" stroke-dasharray="3 4"></path>
+<rect height="32" rx="6" width="26" x="62" y="30"></rect><path d="M68 40h14M68 47h10" opacity=".45"></path>
+<path d="M96 46h12" stroke-dasharray="3 4"></path>
+<rect height="42" rx="7" width="30" x="114" y="20"></rect><path d="M120 30h18M120 38h14M120 46h18M120 54h12" opacity=".45"></path>
+<path d="m126 10 1.6 4.4 4.4 1.6-4.4 1.6-1.6 4.4-1.6-4.4-4.4-1.6 4.4-1.6Z" fill="#E0A03C" stroke="none"></path>
+</svg>
+<p><b>רעיון ← גרסה שעובדת ← הרחבה.</b> כשמבקשים "בנה MVP מלא ועובד" מבקשים בעצם: שהמסכים יהיו מחוברים והכפתורים באמת יעבדו, גם אם עוד אין הכול.</p>
+</div>
+</div>
+</section>
+<nav aria-label="המשך ניווט" class="nextprev">
+<a href="#lesson1"><small>המפגש הקודם</small><b>צ׳אטבוטים ופרומפטים ←</b></a>
+<a href="#lesson3"><small>המפגש הבא</small><b>אקסל, סוכנים ואוטומציה ←</b></a>
+</nav>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="lesson3-title" class="page" id="lesson3" tabindex="-1">
+<div class="pagewrap">
+<header class="phead">
+<a class="back" href="#home"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15 6 9 12l6 6"></path></svg> חזרה לדף הבית</a>
+<p class="phead-date">מפגש 3 · 24/08/2026</p>
+<h1 id="lesson3-title">ניתוח נתוני אקסל, סוכנים ואוטומציה</h1>
+<p class="phead-intro">הצ׳אטבוט מנתח רק נתונים עקביים. מבנה נכון חוסך זמן וטעויות — ולכן החלק הראשון של המפגש עסק בקובץ עצמו, ורק אחר כך בכלים.</p>
+</header>
+<div class="layout">
+<nav aria-label="ניווט בתוך העמוד" class="sidenav">
+<p class="sidenav-title">בעמוד הזה</p>
+<ul><li><a data-jump="lesson3-b1" href="#lesson3-b1">שישה עקרונות למבנה נתונים תקין</a></li>
+<li><a data-jump="lesson3-b2" href="#lesson3-b2">צ׳אטבוט, סוכן, אוטומציה — מה ההבדל</a></li></ul>
+</nav>
+<div class="pagebody">
+<section aria-labelledby="lesson3-b1-h" class="block" id="lesson3-b1">
+<div class="bhead">
+<span aria-hidden="true" class="bicon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><rect height="16" rx="2" width="18" x="3" y="4"></rect><path d="M3 9h18M9 9v11M3 14.5h18"></path></svg></span>
+<h2 id="lesson3-b1-h">שישה עקרונות למבנה נתונים תקין</h2>
+</div>
+<div class="grid g3">
+<div class="card"><h3 style="font-size:18px">עמודה אחת = סוג מידע אחד</h3><p class="mini" style="margin:0">לא לערבב תאריך, סכום וטקסט באותה עמודה.</p></div>
+<div class="card"><h3 style="font-size:18px">שורה אחת = רשומה אחת</h3><p class="mini" style="margin:0">כל שורה מתארת פריט אחד בלבד.</p></div>
+<div class="card"><h3 style="font-size:18px">כותרות בשורה הראשונה</h3><p class="mini" style="margin:0">שורה אחת של כותרות, בלי כותרות כפולות.</p></div>
+<div class="card"><h3 style="font-size:18px">ללא שורות ריקות ותאים ממוזגים</h3><p class="mini" style="margin:0">מיזוג תאים שובר את קריאת הטבלה.</p></div>
+<div class="card"><h3 style="font-size:18px">עיצוב חזותי אינו מידע</h3><p class="mini" style="margin:0">הצ׳אטבוט קורא ערכים, לא צבעים.</p></div>
+<div class="card"><h3 style="font-size:18px">פורמט אחיד</h3><p class="mini" style="margin:0">תאריכים, סכומים ואחוזים באותו פורמט.</p></div>
+</div>
+<div class="grid g2" style="margin-top:16px">
+<div class="card">
+<h3>טבלה מוגדרת מול גבולות</h3>
+<p>גבולות הם עיצוב בלבד — הם לא מזהים טבלה. טבלה מוגדרת (Excel Table) היא מבנה נתונים רשמי, והצ׳אטבוט ניגש אליה לפי שמה.</p>
+<p style="margin-bottom:0"><b>לניתוח — תמיד השתמשו בטבלה מוגדרת.</b></p>
+</div>
+<div class="card">
+<h3>XLSX מול CSV</h3>
+<p><b>XLSX</b> — נוסחאות, גרפים וגיליונות מרובים. עדיף כשיש כמה גיליונות.</p>
+<p><b>CSV</b> — טקסט פשוט, מהיר וקל. עדיף לטבלה שטוחה או לייצוא ממערכת.</p>
+<p style="margin-bottom:0">סוגי CSV: פסיק (התקן האמריקאי), נקודה-פסיק (הגרסה האירופית), ו<b>קידוד יוניקוד</b> — חובה לתמיכה מלאה בעברית.</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="lesson3-b2-h" class="block" id="lesson3-b2">
+<div class="bhead">
+<span aria-hidden="true" class="bicon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><rect height="11" rx="3" width="16" x="4" y="7.5"></rect><path d="M12 4.5v3M9 12.5h.01M15 12.5h.01M9.8 15.6h4.4"></path></svg></span>
+<h2 id="lesson3-b2-h">צ׳אטבוט, סוכן, אוטומציה — מה ההבדל</h2>
+</div>
+<div class="tablewrap">
+<table class="stacky">
+<thead><tr><th></th><th>צ׳אטבוט</th><th>סוכן בצ׳אט</th><th>אוטומציה</th><th>סוכן אוטונומי</th></tr></thead>
+<tbody>
+<tr><th>פועל לבד ברקע?</th><td class="no" data-label="צ׳אטבוט">לא</td><td class="no" data-label="סוכן בצ׳אט">לא</td><td class="yes" data-label="אוטומציה">כן</td><td class="yes" data-label="סוכן אוטונומי">כן</td></tr>
+<tr><th>מי מחליט?</th><td data-label="צ׳אטבוט">אתם, בכל פנייה</td><td data-label="סוכן בצ׳אט">אתם, מראש</td><td data-label="אוטומציה">אתם, מראש</td><td data-label="סוכן אוטונומי">הבינה, תוך כדי</td></tr>
+<tr><th>פועל בעולם?</th><td data-label="צ׳אטבוט">בתוך השיחה</td><td data-label="סוכן בצ׳אט">בעיקר בשיחה</td><td class="yes" data-label="אוטומציה">כן — על מסילה</td><td class="yes" data-label="סוכן אוטונומי">כן — ומחליט</td></tr>
+<tr><th>דוגמה</th><td data-label="צ׳אטבוט">ChatGPT · Copilot</td><td data-label="סוכן בצ׳אט">GPT מותאם</td><td data-label="אוטומציה">Make · n8n</td><td data-label="סוכן אוטונומי">סוכן עצמאי</td></tr>
+</tbody>
+</table>
+</div>
+<div class="grid g2" style="margin-top:16px">
+<div class="card">
+<h3>מתי משתמשים בכל אחד</h3>
+<ul>
+<li><b>צ׳אטבוט</b> — לנסח או לחשוב, פעם אחת</li>
+<li><b>סוכן בצ׳אט</b> — אותו תפקיד שחוזר שוב ושוב (GPTs, Claude Projects, Copilot Agents, Gemini Gems)</li>
+<li><b>אוטומציה</b> — משימה קבועה וצפויה</li>
+<li><b>סוכן אוטונומי</b> — מטרה עם מצבים בלתי צפויים</li>
+</ul>
+<p style="margin:12px 0 0"><b>ההבדל המהותי:</b> אוטומציה מבצעת חוקים, סוכן מפעיל שיקול דעת.</p>
+</div>
+<div class="callout">
+<div aria-hidden="true" class="callout-art"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M12 3.5a5.5 5.5 0 0 0-3.2 10c.4.3.7.8.7 1.3v.7h5v-.7c0-.5.3-1 .7-1.3A5.5 5.5 0 0 0 12 3.5Z"></path><path d="M9.5 18.5h5M10.5 21h3"></path></svg></div>
+<div>
+<h3>בינה היא לא ״יותר טוב״</h3>
+<p>היא ״למקרה אחר״. אם כלל פשוט עובד — <span class="k">השאירו אותו פשוט.</span></p>
+<p>בניית סוכן טוב מתחילה באפיון: תפקיד, קהל יעד, מטרה, פורמט תוצר, שפה וטון, ומקורות ידע. אפיינו בצ׳אטבוט, ואז הדביקו את ההנחיות בסוכן עצמו.</p>
+</div>
+</div>
+</div>
+<div class="tablewrap" style="margin-top:16px">
+<table class="stacky">
+<thead><tr><th>כלי</th><th>הדגש העיקרי בעבודה עם אקסל</th></tr></thead>
+<tbody>
+<tr><th data-label="כלי">Copilot</th><td data-label="הדגש העיקרי בעבודה עם אקסל">שילוב ישיר באקסל ובנתונים הארגוניים</td></tr>
+<tr><th data-label="כלי">ChatGPT</th><td data-label="הדגש העיקרי בעבודה עם אקסל">ניתוח קובץ שמעלים, כולל הרצת קוד</td></tr>
+<tr><th data-label="כלי">Gemini</th><td data-label="הדגש העיקרי בעבודה עם אקסל">הקשר רחב ושילוב בסביבת Google</td></tr>
+<tr><th data-label="כלי">Claude</th><td data-label="הדגש העיקרי בעבודה עם אקסל">טקסטים ארוכים וניתוח מעמיק</td></tr>
+</tbody>
+</table>
+</div>
+<p class="mini" style="margin-top:10px">כל הכלים מנתחים קובצי אקסל; ההבדל הוא בשילוב ובעומק. נכון לאוגוסט 2026 — היכולות משתנות תכופות.</p>
+</section>
+<nav aria-label="המשך ניווט" class="nextprev">
+<a href="#lesson2"><small>המפגש הקודם</small><b>מצגות, אתרים ואפליקציות ←</b></a>
+<a href="#lesson4"><small>המפגש הבא</small><b>תמונה, וידאו וקול ←</b></a>
+</nav>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="lesson4-title" class="page" id="lesson4" tabindex="-1">
+<div class="pagewrap">
+<header class="phead">
+<a class="back" href="#home"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15 6 9 12l6 6"></path></svg> חזרה לדף הבית</a>
+<p class="phead-date">מפגש 4 · 27/08/2026</p>
+<h1 id="lesson4-title">תמונה, וידאו וקול</h1>
+<p class="phead-intro">מטקסט לתמונה, מתמונה לסרטון, מטקסט לקול — ולבסוף חיבור של כל התוצרים יחד בקנבה. את אותו פרומפט כתבנו בכל האתרים, כדי לראות את ההבדלים בין הכלים.</p>
+</header>
+<div class="layout">
+<nav aria-label="ניווט בתוך העמוד" class="sidenav">
+<p class="sidenav-title">בעמוד הזה</p>
+<ul><li><a data-jump="lesson4-b1" href="#lesson4-b1">יצירת תמונה מטקסט</a></li>
+<li><a data-jump="lesson4-b2" href="#lesson4-b2">מתמונה לסרטון — הנפשת תמונה</a></li>
+<li><a data-jump="lesson4-b3" href="#lesson4-b3">אתרים ליצירת סרטונים</a></li>
+<li><a data-jump="lesson4-b4" href="#lesson4-b4">קול — טקסט לדיבור ובחזרה</a></li>
+<li><a data-jump="lesson4-b5" href="#lesson4-b5">לשלב הכול יחד — Canva</a></li></ul>
+</nav>
+<div class="pagebody">
+<section aria-labelledby="lesson4-b1-h" class="block" id="lesson4-b1">
+<div class="bhead">
+<span aria-hidden="true" class="bicon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 5.5h16v13H4z"></path><circle cx="9" cy="10" r="1.6"></circle><path d="m5 17 4.5-5 3.5 3.5L16 13l3 4"></path></svg></span>
+<h2 id="lesson4-b1-h">יצירת תמונה מטקסט</h2>
+</div>
+<p class="bsub">מומלץ להיעזר בצ׳אטבוטים לטובת התאמת ההנחיה לכלי — לכל אתר "שפה" קצת אחרת. הקרדיטים בכל האתרים מתחדשים.</p>
+<div class="grid g3">
+<a class="tool" href="https://leonardo.ai/" rel="noopener" target="_blank"><div aria-hidden="true" class="tool-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 5.5h16v13H4z"></path><circle cx="9" cy="10" r="1.6"></circle><path d="m5 17 4.5-5 3.5 3.5L16 13l3 4"></path></svg></div><b>Leonardo</b><small>יצירת תמונות מטקסט, שליטה בסגנון ובקומפוזיציה</small><span class="url">leonardo.ai</span></a>
+<a class="tool" href="https://firefly.adobe.com/" rel="noopener" target="_blank"><div aria-hidden="true" class="tool-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3.5a8.5 8.5 0 1 0 0 17c1.2 0 1.8-.9 1.8-1.8 0-1.6 1.2-2.2 2.4-2.2h1.3a3 3 0 0 0 3-3c0-5.5-3.9-10-8.5-10Z"></path><circle cx="8" cy="10" r="1.1"></circle><circle cx="12" cy="7.5" r="1.1"></circle><circle cx="16" cy="10" r="1.1"></circle></svg></div><b>Adobe Firefly</b><small>יצירה ועריכה של תמונות מבית Adobe</small><span class="url">firefly.adobe.com</span></a>
+<a class="tool" href="https://designer.microsoft.com/" rel="noopener" target="_blank"><div aria-hidden="true" class="tool-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 3 1.6 4.4L18 9l-4.4 1.6L12 15l-1.6-4.4L6 9l4.4-1.6Z"></path><path d="m18.5 15 .8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8Z"></path></svg></div><b>Microsoft Designer</b><small>יצירת תמונות ועיצובים מהירים</small><span class="url">designer.microsoft.com</span></a>
+</div>
+<div class="band" style="margin-top:16px">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 96 48" xmlns="http://www.w3.org/2000/svg"><rect height="20" rx="3" width="26" x="6" y="14"></rect><circle cx="14" cy="21" r="2.4"></circle><path d="m8 31 7-8 5.5 5.5L26 24l5 7"></path><rect height="20" rx="3" width="26" x="38" y="14"></rect><path d="M45 24h12M51 18v12" opacity=".5"></path><path d="M70 24h8" stroke-dasharray="3 4"></path><path d="m36 24-2 0"></path><path d="m84 20 1.4 3.8L89 25l-3.6 1.2L84 30l-1.4-3.8L79 25l3.6-1.2Z" fill="currentColor" stroke="none"></path></svg>
+<p><b>אותו פרומפט, כמה אתרים.</b> כך רואים מיד איזה כלי מתאים לסגנון שאתם מחפשים — ריאליסטי, איור, או גרפיקה שיווקית.</p>
+</div>
+</section>
+<section aria-labelledby="lesson4-b2-h" class="block" id="lesson4-b2">
+<div class="bhead">
+<span aria-hidden="true" class="bicon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="M8 5v14M16 5v14M3 9.5h5M3 14.5h5M16 9.5h5M16 14.5h5"></path></svg></span>
+<h2 id="lesson4-b2-h">מתמונה לסרטון — הנפשת תמונה</h2>
+</div>
+<p class="bsub">מעלים תמונה קיימת (או כזו שיצרנו בשלב הקודם) ומקבלים סרטון קצר שבו היא מתעוררת לחיים.</p>
+<div class="grid g3">
+<a class="tool" href="https://pika.art/" rel="noopener" target="_blank"><div aria-hidden="true" class="tool-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="8.5"></circle><path d="m10.3 9 4.7 3-4.7 3z"></path></svg></div><b>Pika</b><small>הנפשת תמונות וסרטונים קצרים</small><span class="url">pika.art</span></a>
+<a class="tool" href="https://runwayml.com/" rel="noopener" target="_blank"><div aria-hidden="true" class="tool-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="M8 5v14M16 5v14M3 9.5h5M3 14.5h5M16 9.5h5M16 14.5h5"></path></svg></div><b>Runway</b><small>הנפשה ועריכת וידאו מתקדמת</small><span class="url">runwayml.com</span></a>
+<a class="tool" href="https://www.heygen.com/he-il" rel="noopener" target="_blank"><div aria-hidden="true" class="tool-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="8.5"></circle><path d="m10.3 9 4.7 3-4.7 3z"></path></svg></div><b>HeyGen</b><small>אווטארים מדברים וסרטוני וידאו בעברית</small><span class="url">heygen.com</span></a>
+</div>
+</section>
+<section aria-labelledby="lesson4-b3-h" class="block" id="lesson4-b3">
+<div class="bhead">
+<span aria-hidden="true" class="bicon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="8.5"></circle><path d="m10.3 9 4.7 3-4.7 3z"></path></svg></span>
+<h2 id="lesson4-b3-h">אתרים ליצירת סרטונים</h2>
+</div>
+<p class="bsub">נכנסים עם חשבון ה-Gmail שלנו. מומלץ להיעזר בצ׳אטבוט לחידוד ההנחיה לפני שמייצרים — זה חוסך קרדיטים.</p>
+<div class="grid g3">
+<a class="tool" href="https://invideo.io/" rel="noopener" target="_blank"><div aria-hidden="true" class="tool-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="M8 5v14M16 5v14M3 9.5h5M3 14.5h5M16 9.5h5M16 14.5h5"></path></svg></div><b>InVideo</b><small>יצירת סרטונים מטקסט ומתבניות</small><span class="url">invideo.io</span></a>
+<a class="tool" href="https://fliki.ai/" rel="noopener" target="_blank"><div aria-hidden="true" class="tool-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="8.5"></circle><path d="m10.3 9 4.7 3-4.7 3z"></path></svg></div><b>Fliki</b><small>טקסט לסרטון עם קריינות</small><span class="url">fliki.ai</span></a>
+<a class="tool" href="https://kling.ai/" rel="noopener" target="_blank"><div aria-hidden="true" class="tool-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="M8 5v14M16 5v14M3 9.5h5M3 14.5h5M16 9.5h5M16 14.5h5"></path></svg></div><b>Kling</b><small>יצירת וידאו מטקסט ומתמונה</small><span class="url">kling.ai</span></a>
+</div>
+</section>
+<section aria-labelledby="lesson4-b4-h" class="block" id="lesson4-b4">
+<div class="bhead">
+<span aria-hidden="true" class="bicon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="10" rx="3" width="6" x="9" y="3.5"></rect><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M9 21h6"></path></svg></span>
+<h2 id="lesson4-b4-h">קול — טקסט לדיבור ובחזרה</h2>
+</div>
+<div class="grid g2">
+<a class="tool" href="https://elevenlabs.io/" rel="noopener" target="_blank"><div aria-hidden="true" class="tool-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="10" rx="3" width="6" x="9" y="3.5"></rect><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M9 21h6"></path></svg></div><b>ElevenLabs</b><small>המרת טקסט לקול, המרת קול לטקסט והקראת ספרים · הקרדיטים מתחדשים, ואפשר להוריד את קובצי השמע</small><span class="url">elevenlabs.io</span></a>
+<div class="card">
+<h3>טיפ מהמפגש</h3>
+<p style="margin-bottom:0">כדי לקבל הקראה טבעית בעברית — כתבו את הטקסט בצורה פונטית ובקשו מהצ׳אטבוט לחדד את הניסוח לפני ההקראה. אפשר להוריד את קובץ השמע ולשלב אותו בסרטון.</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="lesson4-b5-h" class="block" id="lesson4-b5">
+<div class="bhead">
+<span aria-hidden="true" class="bicon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3.5a8.5 8.5 0 1 0 0 17c1.2 0 1.8-.9 1.8-1.8 0-1.6 1.2-2.2 2.4-2.2h1.3a3 3 0 0 0 3-3c0-5.5-3.9-10-8.5-10Z"></path><circle cx="8" cy="10" r="1.1"></circle><circle cx="12" cy="7.5" r="1.1"></circle><circle cx="16" cy="10" r="1.1"></circle></svg></span>
+<h2 id="lesson4-b5-h">לשלב הכול יחד — Canva</h2>
+</div>
+<p class="bsub">כאן מחברים את כל התוצרים: התמונות המונפשות + הקול + העיצוב של קנבה, לתוצר אחד מוגמר.</p>
+<div class="grid g2">
+<a class="tool" href="https://www.canva.com/" rel="noopener" target="_blank"><div aria-hidden="true" class="tool-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3.5a8.5 8.5 0 1 0 0 17c1.2 0 1.8-.9 1.8-1.8 0-1.6 1.2-2.2 2.4-2.2h1.3a3 3 0 0 0 3-3c0-5.5-3.9-10-8.5-10Z"></path><circle cx="8" cy="10" r="1.1"></circle><circle cx="12" cy="7.5" r="1.1"></circle><circle cx="16" cy="10" r="1.1"></circle></svg></div><b>Canva</b><small>עיצוב, וידאו ומצגות · נכנסים עם חשבון ה-Gmail ולוחצים על "ליצור"</small><span class="url">canva.com</span></a>
+<div class="card">
+<h3>להפוך תמונה לסרטון בקנבה</h3>
+<ol style="margin:0; padding-right:20px; color:var(--muted); line-height:1.9">
+<li>לוחצים על התמונה</li>
+<li>בוחרים <b>עריכה</b></li>
+<li>בצד ימין בוחרים את האייקון של הפרפר</li>
+<li>בוחרים <b>תמונה לסרטון</b></li>
+</ol>
+</div>
+</div>
+<div class="callout" style="margin-top:16px">
+<div aria-hidden="true" class="callout-art"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3.5a5.5 5.5 0 0 0-3.2 10c.4.3.7.8.7 1.3v.7h5v-.7c0-.5.3-1 .7-1.3A5.5 5.5 0 0 0 12 3.5Z"></path><path d="M9.5 18.5h5M10.5 21h3"></path></svg></div>
+<div>
+<h3>לפני שמייצרים</h3>
+<p>הקרדיטים בכלים החינמיים מוגבלים ומתחדשים מדי תקופה. <span class="k">חדדו את ההנחיה בצ׳אטבוט לפני היצירה</span>, והורידו כל תוצר מוצלח מיד — כדי לא לבזבז הרצה על אותו דבר פעמיים.</p>
+</div>
+</div>
+</section>
+<nav aria-label="המשך ניווט" class="nextprev">
+<a href="#lesson3"><small>המפגש הקודם</small><b>אקסל, סוכנים ואוטומציה ←</b></a>
+<a href="#lesson5"><small>המפגש הבא</small><b>אתיקה ואימות מידע ←</b></a>
+</nav>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="lesson5-title" class="page" id="lesson5" tabindex="-1">
+<div class="pagewrap">
+<header class="phead">
+<a class="back" href="#home"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15 6 9 12l6 6"></path></svg> חזרה לדף הבית</a>
+<p class="phead-date">מפגש 5 · 31/08/2026</p>
+<h1 id="lesson5-title">אתיקה ואימות מידע בעידן הבינה המלאכותית</h1>
+<p class="phead-intro">הזיות, עקרונות אתיים, זכויות יוצרים וזיופים עמוקים — ואיך בודקים מידע לפני שמשתמשים בו. בסוף המפגש עברנו לעבודה מעשית ב-Canva.</p>
+</header>
+<div class="layout">
+<nav aria-label="ניווט בתוך העמוד" class="sidenav">
+<p class="sidenav-title">בעמוד הזה</p>
+<ul><li><a data-jump="lesson5-b1" href="#lesson5-b1">הזיות של בינה מלאכותית</a></li>
+<li><a data-jump="lesson5-b2" href="#lesson5-b2">עקרונות אתיים בשימוש בבינה</a></li>
+<li><a data-jump="lesson5-b3" href="#lesson5-b3">זכויות יוצרים ובינה מלאכותית</a></li>
+<li><a data-jump="lesson5-b4" href="#lesson5-b4">Deepfakes — זיוף עמוק</a></li>
+<li><a data-jump="lesson5-b5" href="#lesson5-b5">גלאי AI — מה באמת עובד?</a></li>
+<li><a data-jump="lesson5-b6" href="#lesson5-b6">עבודה מעשית ב-Canva</a></li>
+<li><a data-jump="lesson5-b7" href="#lesson5-b7">לסיכום</a></li></ul>
+</nav>
+<div class="pagebody">
+<section aria-labelledby="lesson5-b1-h" class="block" id="lesson5-b1">
+<div class="bhead">
+<span aria-hidden="true" class="bicon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 4 3 19.5h18Z"></path><path d="M12 10v4M12 17h.01"></path></svg></span>
+<h2 id="lesson5-b1-h">הזיות של בינה מלאכותית</h2>
+</div>
+<div class="grid g2">
+<div class="card">
+<span class="tag">הגדרה</span>
+<h3>מה זו הזיה?</h3>
+<p style="margin-bottom:0">מצב שבו המודל מייצר מידע שנשמע אמין ומשכנע — אך הוא שגוי, בדוי, או לא מבוסס על עובדות. המודל לא "משקר": הוא מייצר טקסט על בסיס הסתברות, ולא בכל אמירה יש בסיס.</p>
+</div>
+<div class="card">
+<span class="tag">דוגמאות נפוצות</span>
+<h3>איך זה נראה בפועל</h3>
+<ul>
+<li>ציטוט מקורות או מחקרים שלא קיימים</li>
+<li>המצאת שמות אנשים, תאריכים או אירועים</li>
+<li>"עובדות" סטטיסטיות ללא בסיס</li>
+<li>חישוב מוטעה או מסקנה לוגית שגויה</li>
+</ul>
+</div>
+</div>
+<div class="grid g2" style="margin-top:16px">
+<div class="card">
+<h3>איך מזהים הזיות</h3>
+<ul>
+<li><b>בקשו מקורות</b> — דרשו מהמודל לצטט מקורות ספציפיים, ואז ודאו שהם קיימים</li>
+<li><b>הצלבת מידע</b> — בדקו את התשובה מול מקור נוסף או מנוע חיפוש</li>
+<li><b>שאלו שוב אחרת</b> — אם התשובה משתנה מהותית בין ניסוחים, זה סימן לחוסר ביסוס</li>
+<li><b>זהו את הביטחון</b> — הבינה כותבת בביטחון מלא גם כשהיא טועה; ביטחון אינו הוכחה</li>
+</ul>
+</div>
+<div class="callout">
+<div aria-hidden="true" class="callout-art"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 18h6M10 21h4"></path><path d="M12 3a6 6 0 0 0-3.5 10.9c.5.4.8 1 .8 1.6v.5h5.4v-.5c0-.6.3-1.2.8-1.6A6 6 0 0 0 12 3Z"></path></svg></div>
+<div>
+<h3>הכלל הפשוט</h3>
+<p>כל מספר, ציטוט או שם שקיבלתם מהבינה — <span class="k">בדקו אותו מול המקור לפני שהוא נכנס לתוצר שלכם.</span> ההזיה כמעט תמיד מתחבאת דווקא בפרט הקטן והמשכנע ביותר.</p>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="lesson5-b2-h" class="block" id="lesson5-b2">
+<div class="bhead">
+<span aria-hidden="true" class="bicon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3.5 5 6.5v5.2c0 4.2 2.9 7.6 7 8.8 4.1-1.2 7-4.6 7-8.8V6.5Z"></path><path d="M9.5 12.2 11.3 14l3.4-3.8"></path></svg></span>
+<h2 id="lesson5-b2-h">עקרונות אתיים בשימוש בבינה</h2>
+</div>
+<div class="grid g2">
+<div class="card">
+<h3>פרטיות</h3>
+<p style="margin-bottom:0">אל תעלו מידע אישי או רגיש — שלכם או של אחרים. המידע עובר לשרתים חיצוניים ועשוי לשמש לאימון המודל. אין דרך "למחוק" מידע שכבר הועלה.</p>
+</div>
+<div class="card">
+<h3>שקיפות</h3>
+<p style="margin-bottom:0">כשתוכן נוצר בעזרת בינה מלאכותית — ראוי לציין זאת. זה לא פוגם בערך העבודה; זה בונה אמון מול הקהל שלכם.</p>
+</div>
+</div>
+<div class="callout" style="margin-top:16px">
+<div aria-hidden="true" class="callout-art"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3.5 5 6.5v5.2c0 4.2 2.9 7.6 7 8.8 4.1-1.2 7-4.6 7-8.8V6.5Z"></path><path d="M9.5 12.2 11.3 14l3.4-3.8"></path></svg></div>
+<div>
+<h3>בספק? לא מעלים</h3>
+<p>כלל אצבע אחד שמכסה את רוב המקרים: אם אתם מתלבטים אם המידע רגיש — <span class="k">לא מעלים אותו לכלי חיצוני.</span></p>
+</div>
+</div>
+</section>
+<section aria-labelledby="lesson5-b3-h" class="block" id="lesson5-b3">
+<div class="bhead">
+<span aria-hidden="true" class="bicon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H19v14H5.5A1.5 1.5 0 0 0 4 19.5Z"></path><path d="M4 19.5A1.5 1.5 0 0 1 5.5 18H19v2H5.5A1.5 1.5 0 0 1 4 19.5Z"></path></svg></span>
+<h2 id="lesson5-b3-h">זכויות יוצרים ובינה מלאכותית</h2>
+</div>
+<div class="grid g2">
+<div class="card">
+<span class="tag">קלט — מה מזינים</span>
+<h3>מה שאתם מעלים</h3>
+<ul>
+<li>העלאת מסמך מוגן זכויות עלולה להוות הפרה</li>
+<li>שימוש בתמונות מוגנות כקלט — דורש זהירות</li>
+<li>תמלול או סיכום של חומרים מוגנים אינם "מנקים" אותם</li>
+</ul>
+</div>
+<div class="card">
+<span class="tag">פלט — מה מקבלים</span>
+<h3>מה שהכלי מייצר</h3>
+<ul>
+<li>מודלים עלולים לייצר תוכן הדומה ליצירות קיימות</li>
+<li>תמונות בסגנון של יוצר מזוהה — עדיין רגישות</li>
+<li>הבעלות על התוצר אינה מוגדרת באופן ברור</li>
+</ul>
+</div>
+</div>
+<p class="mini" style="margin-top:12px">המצב המשפטי בישראל עדיין לא מוסדר לגבי תוצרי בינה מלאכותית — אין פסיקה ברורה. עד אז: זהירות ומתן קרדיט.</p>
+</section>
+<section aria-labelledby="lesson5-b4-h" class="block" id="lesson5-b4">
+<div class="bhead">
+<span aria-hidden="true" class="bicon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3.5 5 6.5v5.2c0 4.2 2.9 7.6 7 8.8 4.1-1.2 7-4.6 7-8.8V6.5Z"></path><path d="M9.3 11.5h1.5M13.2 11.5h1.5M9.8 15c1.4-1 3-1 4.4 0"></path></svg></span>
+<h2 id="lesson5-b4-h">Deepfakes — זיוף עמוק</h2>
+</div>
+<p class="bsub">תוכן סינתטי — תמונה, וידאו או קול — שנוצר בעזרת בינה כדי להציג אנשים אומרים או עושים דברים שמעולם לא קרו.</p>
+<div class="grid g3">
+<div class="card">
+<h3>איך מזהים</h3>
+<ul>
+<li>אצבעות, שיניים ועיניים — שם מתגלים רוב הזיופים</li>
+<li>תאורה וצללים לא עקביים</li>
+<li>שפתיים שאינן מסונכרנות לקול</li>
+<li>כלי זיהוי כמו Deepware Scanner</li>
+</ul>
+</div>
+<div class="card">
+<h3>השלכות</h3>
+<ul>
+<li>הונאות ופגיעה במוניטין</li>
+<li>הפצת מידע כוזב ופייק ניוז</li>
+<li>פגיעה בפרטיות ובכבוד האדם</li>
+<li>שחיקת האמון במידע חזותי בכלל</li>
+</ul>
+</div>
+<div class="card">
+<h3>מה עושים</h3>
+<ul>
+<li>בודקים את המקור לפני שמשתפים</li>
+<li>מחפשים את אותו תוכן במקור רשמי</li>
+<li>לא ממהרים להפיץ — גם אם זה נראה אמיתי</li>
+</ul>
+</div>
+</div>
+</section>
+<section aria-labelledby="lesson5-b5-h" class="block" id="lesson5-b5">
+<div class="bhead">
+<span aria-hidden="true" class="bicon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg></span>
+<h2 id="lesson5-b5-h">גלאי AI — מה באמת עובד?</h2>
+</div>
+<div class="tablewrap">
+<table class="stacky">
+<thead><tr><th>מיתוס</th><th>מציאות</th></tr></thead>
+<tbody>
+<tr><th data-label="מיתוס">"הגלאי מזהה ב-95% מהמקרים"</th><td data-label="מציאות">בעברית הדיוק נמוך בהרבה מהמספרים שמתפרסמים</td></tr>
+<tr><th data-label="מיתוס">"אם הגלאי אמר AI — זה AI"</th><td data-label="מציאות">יש false positives: טקסט אנושי לגמרי מסומן כ-AI</td></tr>
+<tr><th data-label="מיתוס">"אם הגלאי לא זיהה — הטקסט אנושי"</th><td data-label="מציאות">שכתוב קל מספיק כדי לעקוף גלאי, ולכן "לא זוהה" אינו אומר דבר</td></tr>
+<tr><th data-label="מיתוס">"אין טעם לבדוק"</th><td data-label="מציאות">הגלאי הוא אינדיקציה, לא הוכחה — ועדיין שווה להסתכל</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section aria-labelledby="lesson5-b6-h" class="block" id="lesson5-b6">
+<div class="bhead">
+<span aria-hidden="true" class="bicon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3.5a8.5 8.5 0 1 0 0 17c1.2 0 1.8-.9 1.8-1.8 0-1.6 1.2-2.2 2.4-2.2h1.3a3 3 0 0 0 3-3c0-5.5-3.9-10-8.5-10Z"></path><circle cx="8" cy="10" r="1.1"></circle><circle cx="12" cy="7.5" r="1.1"></circle><circle cx="16" cy="10" r="1.1"></circle></svg></span>
+<h2 id="lesson5-b6-h">עבודה מעשית ב-Canva</h2>
+</div>
+<p class="bsub">יצרנו הזמנה לטקס סיום קורס, בעזרת פיצ׳רי הבינה שבתוך Canva.</p>
+<div class="grid g2">
+<div class="card">
+<h3>שלבי העבודה</h3>
+<ol style="margin:0; padding-right:20px; color:var(--muted); line-height:1.9">
+<li>נכנסים ל-Canva עם חשבון ה-Gmail ולוחצים <b>ליצור</b></li>
+<li>בוחרים תבנית מתאימה או מתחילים מעיצוב ריק</li>
+<li>משתמשים ב<b>כתיבת קסם</b> (Magic Write) כדי לנסח את טקסט ההזמנה</li>
+<li>מתאימים צבעים, גופן ותמונת רקע</li>
+<li>מורידים כ-PNG או PDF, או משתפים בקישור</li>
+</ol>
+</div>
+<div class="card">
+<h3>מה לכתוב ב״כתיבת קסם״</h3>
+<p>ככל שההנחיה מפורטת יותר, כך פחות עריכה אחר כך. תנו לה: סוג האירוע, קהל, תאריך ושעה, מיקום, וטון.</p>
+<p class="mini" style="margin-bottom:0">לדוגמה: "כתוב טקסט הזמנה חם ומקצועי לטקס סיום קורס מנטורינג מתקדם בשילוב AI, שיתקיים ב-31 באוגוסט 2026 בשעה 14:45, עד 60 מילים."</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="lesson5-b7-h" class="block" id="lesson5-b7">
+<div class="bhead">
+<span aria-hidden="true" class="bicon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 18h6M10 21h4"></path><path d="M12 3a6 6 0 0 0-3.5 10.9c.5.4.8 1 .8 1.6v.5h5.4v-.5c0-.6.3-1.2.8-1.6A6 6 0 0 0 12 3Z"></path></svg></span>
+<h2 id="lesson5-b7-h">לסיכום</h2>
+</div>
+<ol class="rules">
+<li><b>הזיות</b><span>מודלים מייצרים מידע שנשמע אמין אך עלול להיות שגוי — תמיד לאמת.</span></li>
+<li><b>אתיקה</b><span>פרטיות, שקיפות וזכויות יוצרים — עקרונות ליישום יומיומי, לא תיאוריה.</span></li>
+<li><b>דיפפייקים</b><span>תוכן מזויף נראה אמיתי; כלי זיהוי מסייעים אך אינם מושלמים.</span></li>
+<li><b>האדם אחראי</b><span>הבינה היא כלי — האחריות על התוצר היא תמיד שלכם.</span></li>
+</ol>
+</section>
+<nav aria-label="המשך ניווט" class="nextprev">
+<a href="#lesson4"><small>המפגש הקודם</small><b>תמונה, וידאו וקול ←</b></a>
+<a href="#project"><small>לסיום</small><b>הפרויקט המסכם ←</b></a>
+</nav>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="project-title" class="page" id="project" tabindex="-1">
+<div class="pagewrap">
+<header class="phead">
+<a class="back" href="#home"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15 6 9 12l6 6"></path></svg> חזרה לדף הבית</a>
+<p class="phead-date">הפרויקט המסכם</p>
+<h1 id="project-title">אתגר המומחה: מחקר, יצירה ואימות</h1>
+<p class="phead-intro">משתמש "נבון" לא רק יודע להשתמש בכלים — הוא יודע מתי להשתמש, מתי לא, ואיך לבדוק את התוצאה. בפרויקט הזה תבחרו נושא שמעניין אתכם, תהפכו ל"מומחים" בעזרת כלי AI, ותיצרו חבילת ידע מקצועית. אבל יש תפנית: תצטרכו גם לתעד את המקומות שבהם ה-AI טעה, המציא, או היה לא מדויק.</p>
+</header>
+<div class="layout">
+<nav aria-label="ניווט בתוך העמוד" class="sidenav">
+<p class="sidenav-title">בעמוד הזה</p>
+<ul><li><a data-jump="project-b1" href="#project-b1">בחירת נושא</a></li>
+<li><a data-jump="project-b2" href="#project-b2">שלבי העבודה</a></li>
+<li><a data-jump="project-b3" href="#project-b3">הצגת הפרויקט</a></li>
+<li><a data-jump="project-b4" href="#project-b4">איך מעריכים</a></li></ul>
+</nav>
+<div class="pagebody">
+<section aria-labelledby="project-b1-h" class="block" id="project-b1">
+<div class="bhead">
+<span aria-hidden="true" class="bicon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6 21V4M6 5h11l-2 3.5L17 12H6"></path></svg></span>
+<h2 id="project-b1-h">בחירת נושא</h2>
+</div>
+<p class="bsub">בחרו נושא אחד שבאמת מעניין אתכם — ממש לא חייב להיות מקצועי. כמה כיוונים:</p>
+<div class="grid g2">
+<div class="card">
+<h3>רעיונות</h3>
+<ul>
+<li>טכנולוגיה חדשה שקראתם עליה לאחרונה</li>
+<li>תחום מקצועי שתמיד רציתם להבין לעומק</li>
+<li>נושא שרלוונטי לתפקיד שלכם</li>
+<li>תחביב, ספורט, מדע, היסטוריה — כל דבר</li>
+</ul>
+</div>
+<div class="callout">
+<div aria-hidden="true" class="callout-art"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 18h6M10 21h4"></path><path d="M12 3a6 6 0 0 0-3.5 10.9c.5.4.8 1 .8 1.6v.5h5.4v-.5c0-.6.3-1.2.8-1.6A6 6 0 0 0 12 3Z"></path></svg></div>
+<div>
+<h3>כמה ממוקד הנושא צריך להיות</h3>
+<p>מספיק ספציפי כדי לייצר ממנו תוכן ממוקד. <span class="k">"בינה מלאכותית" — רחב מדי. "השימוש ב-AI בחקלאות" — מדויק יותר, ולכן מתאים.</span></p>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="project-b2-h" class="block" id="project-b2">
+<div class="bhead">
+<span aria-hidden="true" class="bicon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="17" rx="2" width="16" x="4" y="3.5"></rect><path d="M8 8h8M8 12h8M8 16h5"></path></svg></span>
+<h2 id="project-b2-h">שלבי העבודה</h2>
+</div>
+<p class="bsub">חמישה שלבים, כל אחד בונה על הקודם. הפרומפטים כאן הם נקודת פתיחה — קחו אותם והתאימו לנושא שלכם.</p>
+<div class="grid g2">
+<article class="tech">
+<div class="tech-top">
+<div aria-hidden="true" class="tech-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg></div>
+<div class="tech-name" style="direction:rtl">שלב 1 · מחקר ואיסוף מידע</div>
+<h3>לחקור את הנושא</h3>
+<p class="tech-when">השתמשו ב-Perplexity או בצ׳אטבוט אחר.</p>
+<p class="tech-when" style="margin-top:10px"><b>תוצר נדרש:</b></p>
+<ul style="margin:6px 0 0; padding-right:20px; color:var(--muted); font-size:16px; line-height:1.8">
+<li>3 עובדות מרכזיות על הנושא — עם ציון מקורות</li>
+<li>טענה אחת שנשמעת אמינה אך דורשת בדיקה — ליומן השגיאות</li>
+<li>השוואה: אותה שאלה בשני כלים שונים — מה ההבדל בתשובות?</li>
+</ul>
+</div>
+<div class="prompt"><div class="prompt-label">פרומפט לדוגמה</div><pre>חקור עבורי את הנושא: [הנושא שבחרתי].
+תן לי 3 עובדות מרכזיות, ולכל אחת ציין מקור ספציפי שאפשר לאמת.
+ציין במפורש אם יש טענה שאינך בטוח בה.</pre><button class="copy">העתקה</button></div> </article>
+<article class="tech">
+<div class="tech-top">
+<div aria-hidden="true" class="tech-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6 3.5h7.5L18 8v12.5H6z"></path><path d="M13.5 3.5V8H18M9 12h6M9 15.5h6"></path></svg></div>
+<div class="tech-name" style="direction:rtl">שלב 2 · כתיבת תוכן</div>
+<h3>סיכום מקצועי</h3>
+<p class="tech-when">כתבו פרומפט מקצועי למודל שפה (ChatGPT / Claude / Gemini) וצרו:</p>
+<ul style="margin:6px 0 0; padding-right:20px; color:var(--muted); font-size:16px; line-height:1.8">
+<li>סיכום מקצועי של הנושא (חצי עמוד) — בסגנון שמתאים לקהל היעד שתבחרו</li>
+<li>שימוש בלפחות 2 טכניקות פרומפט שלמדנו (Role, Few-shot וכו׳)</li>
+<li>בדיקת הפלט — האם יש עובדות שצריך לאמת? תעדו ביומן השגיאות</li>
+</ul>
+</div>
+<div class="prompt"><div class="prompt-label">פרומפט לדוגמה — Role + הקשר</div><pre>אתה [תפקיד מקצועי בתחום].
+כתוב סיכום של חצי עמוד על [הנושא שבחרתי] עבור [קהל היעד].
+טון: [ענייני / חם / שיווקי].
+הוסף בסוף שורה אחת: מה בטקסט הזה דורש אימות מול מקור.</pre><button class="copy">העתקה</button></div> </article>
+<article class="tech">
+<div class="tech-top">
+<div aria-hidden="true" class="tech-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3.5a8.5 8.5 0 1 0 0 17c1.2 0 1.8-.9 1.8-1.8 0-1.6 1.2-2.2 2.4-2.2h1.3a3 3 0 0 0 3-3c0-5.5-3.9-10-8.5-10Z"></path><circle cx="8" cy="10" r="1.1"></circle><circle cx="12" cy="7.5" r="1.1"></circle><circle cx="16" cy="10" r="1.1"></circle></svg></div>
+<div class="tech-name" style="direction:rtl">שלב 3 · תוצרים ויזואליים</div>
+<h3>לפחות 3 תוצרים</h3>
+<p class="tech-when">בחרו לפחות שלושה מתוך הרשימה:</p>
+<ul style="margin:6px 0 0; padding-right:20px; color:var(--muted); font-size:16px; line-height:1.8">
+<li>מצגת קצרה (5–10 שקפים) ב-Gamma או Canva</li>
+<li>אינפוגרפיקה ב-Napkin</li>
+<li>תמונה מקורית ב-Leonardo / Firefly / Copilot / Gemini</li>
+<li>סרטון קצר — הנפשת תמונה ב-Pika / Runway / Copilot</li>
+<li>קריינות ב-ElevenLabs, או מוזיקה ב-Gemini או Suno</li>
+</ul>
+</div>
+</article>
+<article class="tech">
+<div class="tech-top">
+<div aria-hidden="true" class="tech-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="11" rx="3" width="16" x="4" y="7.5"></rect><path d="M12 4.5v3M9 12.5h.01M15 12.5h.01M9.8 15.6h4.4"></path></svg></div>
+<div class="tech-name" style="direction:rtl">שלב 4 · בניית סוכן</div>
+<h3>סוכן שמתמחה בנושא שלכם</h3>
+<p class="tech-when">בנו סוכן ב-Copilot, Gemini או Claude. הסוכן צריך לדעת לענות על שאלות בנושא, להפנות למקורות, ולהתנהג בסגנון שהגדרתם.</p>
+<p class="tech-when" style="margin-top:10px"><b>בדקו אותו:</b> שאלו שאלה שאתם יודעים את התשובה לה. ענה נכון? תעדו ביומן.</p>
+</div>
+<div class="prompt"><div class="prompt-label">הנחיות לסוכן — תבנית</div><pre>אתה מומחה ל[הנושא שבחרתי].
+קהל היעד שלך: [מי].
+כשאתה עונה: ענה קצר וברור, הפנה למקור כשאפשר, ואם אינך יודע — אמור זאת.
+טון: [הטון שבחרתי].
+אל תמציא נתונים או מקורות.</pre><button class="copy">העתקה</button></div> </article>
+<article class="tech">
+<div class="tech-top">
+<div aria-hidden="true" class="tech-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="17" rx="2" width="16" x="4" y="3.5"></rect><path d="M8 8h8M8 12h8M8 16h5"></path></svg></div>
+<div class="tech-name" style="direction:rtl">שלב 5 · יומן שגיאות והכנה להצגה</div>
+<h3>לתעד איפה הבינה טעתה</h3>
+<p class="tech-when">מינימום 3 שגיאות מתועדות. אם ה-AI לא טעה — שאלו שאלה שתגרום לו לטעות. המטרה היא להוכיח שאתם יודעים לזהות.</p>
+</div>
+</article>
+</div>
+<div class="tablewrap" style="margin-top:16px">
+<table class="stacky">
+<thead><tr><th>מס׳</th><th>מה השגיאה</th><th>מה היה הפלט</th><th>מה עשיתם</th></tr></thead>
+<tbody>
+<tr><th data-label="מס׳">1</th><td data-label="מה השגיאה"> </td><td data-label="מה היה הפלט"> </td><td data-label="מה עשיתם"> </td></tr>
+<tr><th data-label="מס׳">2</th><td data-label="מה השגיאה"> </td><td data-label="מה היה הפלט"> </td><td data-label="מה עשיתם"> </td></tr>
+<tr><th data-label="מס׳">3</th><td data-label="מה השגיאה"> </td><td data-label="מה היה הפלט"> </td><td data-label="מה עשיתם"> </td></tr>
+</tbody>
+</table>
+</div>
+<p class="mini" style="margin-top:10px">אפשר להעתיק את הטבלה למסמך Word או לגיליון, ולמלא אותה תוך כדי העבודה — לא בסוף.</p>
+</section>
+<section aria-labelledby="project-b3-h" class="block" id="project-b3">
+<div class="bhead">
+<span aria-hidden="true" class="bicon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="10" rx="3" width="6" x="9" y="3.5"></rect><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M9 21h6"></path></svg></span>
+<h2 id="project-b3-h">הצגת הפרויקט</h2>
+</div>
+<p class="bsub">הצגה קצרה בפני הכיתה, בארבעה חלקים:</p>
+<ol class="rules">
+<li><b>הנושא שבחרתם</b><span>במשפט אחד.</span></li>
+<li><b>הכלים שהשתמשתם בהם</b><span>ולמה בחרתם דווקא אותם.</span></li>
+<li><b>התוצר</b><span>שתפו את המצגת / הסרטון / הסוכן.</span></li>
+<li><b>יומן השגיאות</b><span>זה החלק הכי מעניין: מה ה-AI עשה לא נכון, ואיך גיליתם?</span></li>
+</ol>
+</section>
+<section aria-labelledby="project-b4-h" class="block" id="project-b4">
+<div class="bhead">
+<span aria-hidden="true" class="bicon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 18h6M10 21h4"></path><path d="M12 3a6 6 0 0 0-3.5 10.9c.5.4.8 1 .8 1.6v.5h5.4v-.5c0-.6.3-1.2.8-1.6A6 6 0 0 0 12 3Z"></path></svg></span>
+<h2 id="project-b4-h">איך מעריכים</h2>
+</div>
+<div class="tablewrap">
+<table class="stacky">
+<thead><tr><th>קריטריון</th><th>מה בודקים</th></tr></thead>
+<tbody>
+<tr><th data-label="קריטריון">בחירת כלי מתאימה</th><td data-label="מה בודקים">בחרתם את הכלי הנכון למשימה? או סתם השתמשתם במה שמוכר?</td></tr>
+<tr><th data-label="קריטריון">איכות הפרומפט</th><td data-label="מה בודקים">הפרומפטים מקצועיים? השתמשתם בטכניקות שלמדנו?</td></tr>
+<tr><th data-label="קריטריון">אימות ושיפוט</th><td data-label="מה בודקים">זיהיתם שגיאות? בדקתם מקורות?</td></tr>
+<tr><th data-label="קריטריון">איכות התוצר</th><td data-label="מה בודקים">התוצר ברמה שאפשר להשתמש בו בפועל?</td></tr>
+</tbody>
+</table>
+</div>
+<div class="callout" style="margin-top:20px">
+<div aria-hidden="true" class="callout-art"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 18h6M10 21h4"></path><path d="M12 3a6 6 0 0 0-3.5 10.9c.5.4.8 1 .8 1.6v.5h5.4v-.5c0-.6.3-1.2.8-1.6A6 6 0 0 0 12 3Z"></path></svg></div>
+<div>
+<h3>בהצלחה!</h3>
+<p>אל תשקיעו את כל הזמן בעיצוב. <span class="k">פרויקט פשוט עם יומן שגיאות מדויק — שווה יותר מפרויקט מרשים שלא נבדק.</span></p>
+</div>
+</div>
+</section>
+<nav aria-label="המשך ניווט" class="nextprev">
+<a href="#prompts"><small>יעזור לכם בדרך</small><b>7 טכניקות לכתיבת פרומפטים ←</b></a>
+<a href="#lesson5"><small>לפני ההגשה</small><b>מפגש 5 · אתיקה ואימות מידע ←</b></a>
+</nav>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="tools-title" class="page" id="tools" tabindex="-1">
+<div class="pagewrap">
+<header class="phead">
+<a class="back" href="#home"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15 6 9 12l6 6"></path></svg> חזרה לדף הבית</a>
+<p class="phead-date">לעיון מהיר</p>
+<h1 id="tools-title">כל הכלים שעבדנו איתם</h1>
+<p class="phead-intro">לכל הכלים נכנסים עם חשבון ה-Gmail שלכם. שימו לב שבגרסאות החינמיות מספר ההרצות מוגבל — אז כדאי לחדד את ההנחיה לפני שמייצרים.</p>
+</header>
+<div class="layout layout--full">
+<div class="pagebody">
+<section aria-labelledby="tools-b1-h" class="block" id="tools-b1">
+<div class="bhead"><h2 id="tools-b1-h">צ׳אטבוטים</h2></div>
+<div class="grid g3">
+<a class="tool" href="https://chatgpt.com/" rel="noopener" target="_blank"><div aria-hidden="true" class="tool-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="11" rx="3" width="16" x="4" y="7.5"></rect><path d="M12 4.5v3M9 12.5h.01M15 12.5h.01M9.8 15.6h4.4"></path></svg></div><b>ChatGPT</b><small>OpenAI · פרויקטים, ניתוח קבצים, יצירת מסמכים ומצגות</small><span class="url">chatgpt.com</span></a>
+<a class="tool" href="https://claude.ai/new" rel="noopener" target="_blank"><div aria-hidden="true" class="tool-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="11" rx="3" width="16" x="4" y="7.5"></rect><path d="M12 4.5v3M9 12.5h.01M15 12.5h.01M9.8 15.6h4.4"></path></svg></div><b>Claude</b><small>Anthropic · טקסטים ארוכים, ניתוח מעמיק, בניית אתרים וקבצים</small><span class="url">claude.ai</span></a>
+<a class="tool" href="https://gemini.google.com/app" rel="noopener" target="_blank"><div aria-hidden="true" class="tool-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="11" rx="3" width="16" x="4" y="7.5"></rect><path d="M12 4.5v3M9 12.5h.01M15 12.5h.01M9.8 15.6h4.4"></path></svg></div><b>Gemini</b><small>Google · הקשר רחב ושילוב עם סביבת גוגל ו-Gems</small><span class="url">gemini.google.com</span></a>
+<a class="tool" href="https://copilot.microsoft.com/" rel="noopener" target="_blank"><div aria-hidden="true" class="tool-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="11" rx="3" width="16" x="4" y="7.5"></rect><path d="M12 4.5v3M9 12.5h.01M15 12.5h.01M9.8 15.6h4.4"></path></svg></div><b>Copilot</b><small>Microsoft · שילוב ישיר באקסל ובנתונים הארגוניים</small><span class="url">copilot.microsoft.com</span></a>
+<a class="tool" href="https://www.perplexity.ai/" rel="noopener" target="_blank"><div aria-hidden="true" class="tool-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg></div><b>Perplexity</b><small>חיפוש עם מקורות, פרויקטים ו-Brain לניהול ידע</small><span class="url">perplexity.ai</span></a>
+<a class="tool" href="https://ivrit.ai/" rel="noopener" target="_blank"><div aria-hidden="true" class="tool-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="10" rx="3" width="6" x="9" y="3.5"></rect><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M9 21h6"></path></svg></div><b>אליעזר</b><small>תמלול שיחה בעברית · כלי ישראלי</small><span class="url">ivrit.ai</span></a>
+</div>
+<div class="bhead" style="margin-top:34px"><h2>יצירת תוכן וכלים נוספים</h2></div>
+<div class="grid g3">
+<a class="tool" href="https://notebooklm.google/" rel="noopener" target="_blank"><div aria-hidden="true" class="tool-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H19v14H5.5A1.5 1.5 0 0 0 4 19.5Z"></path><path d="M4 19.5A1.5 1.5 0 0 1 5.5 18H19v2H5.5A1.5 1.5 0 0 1 4 19.5Z"></path></svg></div><b>NotebookLM</b><small>מחברת חכמה מבית Google · מקורות, צ׳אט וסטודיו: מצגת, סקירה קולית, וידאו, מפת חשיבה, אינפוגרפיקה</small><span class="url">notebooklm.google</span></a>
+<a class="tool" href="https://gamma.app/" rel="noopener" target="_blank"><div aria-hidden="true" class="tool-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="12" rx="2" width="18" x="3" y="4.5"></rect><path d="M12 16.5V20M8.5 20h7M7 9h7M7 12h5"></path></svg></div><b>Gamma</b><small>מצגות, מסמכים, אתרים וגרפיקה · ייצוא ל-PDF, PowerPoint ו-Google Slides</small><span class="url">gamma.app</span></a>
+<a class="tool" href="https://www.napkin.ai/" rel="noopener" target="_blank"><div aria-hidden="true" class="tool-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"></path></svg></div><b>Napkin</b><small>הופך טקסט לאינפוגרפיקה בלחיצת כפתור · ייצוא PNG, SVG, PDF, PPT</small><span class="url">napkin.ai</span></a>
+<a class="tool" href="https://lovable.dev/" rel="noopener" target="_blank"><div aria-hidden="true" class="tool-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="19" rx="3" width="12" x="6" y="2.5"></rect><path d="M10.5 18.5h3"></path></svg></div><b>Lovable</b><small>בניית אפליקציות ואתרים מתוך תיאור בשפה חופשית</small><span class="url">lovable.dev</span></a>
+<a class="tool" href="https://base44.com/" rel="noopener" target="_blank"><div aria-hidden="true" class="tool-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m8.5 9-3.5 3 3.5 3M15.5 9l3.5 3-3.5 3M13.5 6.5l-3 11"></path></svg></div><b>Base44</b><small>בניית אפליקציות · חלופה ל-Lovable להשוואה בין הכלים</small><span class="url">base44.com</span></a>
+<a class="tool" href="https://suno.com/" rel="noopener" target="_blank"><div aria-hidden="true" class="tool-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 18V6l10-2v12"></path><circle cx="6.5" cy="18" r="2.5"></circle><circle cx="16.5" cy="16" r="2.5"></circle></svg></div><b>Suno</b><small>יצירת שירים ומוזיקה מתוך מילים וסגנון מוזיקלי</small><span class="url">suno.com</span></a>
+</div>
+<div class="bhead" style="margin-top:34px"><h2>תמונה, וידאו וקול</h2></div>
+<div class="grid g3">
+<a class="tool" href="https://leonardo.ai/" rel="noopener" target="_blank"><div aria-hidden="true" class="tool-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 5.5h16v13H4z"></path><circle cx="9" cy="10" r="1.6"></circle><path d="m5 17 4.5-5 3.5 3.5L16 13l3 4"></path></svg></div><b>Leonardo</b><small>יצירת תמונות מטקסט</small><span class="url">leonardo.ai</span></a>
+<a class="tool" href="https://firefly.adobe.com/" rel="noopener" target="_blank"><div aria-hidden="true" class="tool-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3.5a8.5 8.5 0 1 0 0 17c1.2 0 1.8-.9 1.8-1.8 0-1.6 1.2-2.2 2.4-2.2h1.3a3 3 0 0 0 3-3c0-5.5-3.9-10-8.5-10Z"></path><circle cx="8" cy="10" r="1.1"></circle><circle cx="12" cy="7.5" r="1.1"></circle><circle cx="16" cy="10" r="1.1"></circle></svg></div><b>Adobe Firefly</b><small>יצירה ועריכת תמונות מבית Adobe</small><span class="url">firefly.adobe.com</span></a>
+<a class="tool" href="https://designer.microsoft.com/" rel="noopener" target="_blank"><div aria-hidden="true" class="tool-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 3 1.6 4.4L18 9l-4.4 1.6L12 15l-1.6-4.4L6 9l4.4-1.6Z"></path><path d="m18.5 15 .8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8Z"></path></svg></div><b>Microsoft Designer</b><small>תמונות ועיצובים מהירים</small><span class="url">designer.microsoft.com</span></a>
+<a class="tool" href="https://pika.art/" rel="noopener" target="_blank"><div aria-hidden="true" class="tool-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="8.5"></circle><path d="m10.3 9 4.7 3-4.7 3z"></path></svg></div><b>Pika</b><small>הנפשת תמונות לסרטונים קצרים</small><span class="url">pika.art</span></a>
+<a class="tool" href="https://runwayml.com/" rel="noopener" target="_blank"><div aria-hidden="true" class="tool-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="M8 5v14M16 5v14M3 9.5h5M3 14.5h5M16 9.5h5M16 14.5h5"></path></svg></div><b>Runway</b><small>הנפשה ועריכת וידאו מתקדמת</small><span class="url">runwayml.com</span></a>
+<a class="tool" href="https://www.heygen.com/he-il" rel="noopener" target="_blank"><div aria-hidden="true" class="tool-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="8.5"></circle><path d="m10.3 9 4.7 3-4.7 3z"></path></svg></div><b>HeyGen</b><small>אווטארים מדברים וסרטונים בעברית</small><span class="url">heygen.com</span></a>
+<a class="tool" href="https://invideo.io/" rel="noopener" target="_blank"><div aria-hidden="true" class="tool-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="M8 5v14M16 5v14M3 9.5h5M3 14.5h5M16 9.5h5M16 14.5h5"></path></svg></div><b>InVideo</b><small>סרטונים מטקסט ומתבניות</small><span class="url">invideo.io</span></a>
+<a class="tool" href="https://fliki.ai/" rel="noopener" target="_blank"><div aria-hidden="true" class="tool-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="8.5"></circle><path d="m10.3 9 4.7 3-4.7 3z"></path></svg></div><b>Fliki</b><small>טקסט לסרטון עם קריינות</small><span class="url">fliki.ai</span></a>
+<a class="tool" href="https://kling.ai/" rel="noopener" target="_blank"><div aria-hidden="true" class="tool-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="M8 5v14M16 5v14M3 9.5h5M3 14.5h5M16 9.5h5M16 14.5h5"></path></svg></div><b>Kling</b><small>וידאו מטקסט ומתמונה</small><span class="url">kling.ai</span></a>
+<a class="tool" href="https://elevenlabs.io/" rel="noopener" target="_blank"><div aria-hidden="true" class="tool-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="10" rx="3" width="6" x="9" y="3.5"></rect><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M9 21h6"></path></svg></div><b>ElevenLabs</b><small>טקסט לקול, קול לטקסט והקראת ספרים</small><span class="url">elevenlabs.io</span></a>
+<a class="tool" href="https://www.canva.com/" rel="noopener" target="_blank"><div aria-hidden="true" class="tool-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3.5a8.5 8.5 0 1 0 0 17c1.2 0 1.8-.9 1.8-1.8 0-1.6 1.2-2.2 2.4-2.2h1.3a3 3 0 0 0 3-3c0-5.5-3.9-10-8.5-10Z"></path><circle cx="8" cy="10" r="1.1"></circle><circle cx="12" cy="7.5" r="1.1"></circle><circle cx="16" cy="10" r="1.1"></circle></svg></div><b>Canva</b><small>עיצוב, וידאו ומצגות — לחיבור כל התוצרים</small><span class="url">canva.com</span></a>
+</div>
+</section>
+<nav aria-label="המשך ניווט" class="nextprev">
+<a href="#prompts"><small>לעיון מהיר</small><b>7 טכניקות לכתיבת פרומפטים ←</b></a>
+<a href="#home"><small>חזרה</small><b>לדף הבית ←</b></a>
+</nav>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="checklist-title" class="page" id="checklist" tabindex="-1">
+<div class="pagewrap">
+<header class="phead">
+<a class="back" href="#home"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15 6 9 12l6 6"></path></svg> חזרה לדף הבית</a>
+<p class="phead-date">לפני שמגישים</p>
+<h1 id="checklist-title">רשימת בדיקה לכל תוצר</h1>
+<p class="phead-intro">שתי דקות שחוסכות הרבה תיקונים. עברו על הרשימה לפני שאתם מגישים כל תוצר — מסמך, מצגת, אינפוגרפיקה או אפליקציה.</p>
+</header>
+<div class="layout layout--full">
+<div class="pagebody">
+<section aria-labelledby="checklist-b1-h" class="block" id="checklist-b1">
+<div class="check">
+<div>הנתונים והמספרים אומתו מול המקור, לא רק מול הצ׳אטבוט</div>
+<div>העברית מיושרת לימין והמסמך כולו ב-RTL</div>
+<div>הגופן, הגדלים והכותרות אחידים לאורך כל התוצר</div>
+<div>אין מונחים מקצועיים ללא הסבר קצר לצדם</div>
+<div>המצגת עומדת במגבלה: עד 7 שורות בשקף ועד 7 מילים בשורה</div>
+<div>לא הועלה מידע אישי או רגיש לכלי ענן</div>
+<div>הפרומפט שעבד נשמר לשימוש חוזר</div>
+<div>התוצר הושווה בין לפחות שני כלים לפני הבחירה</div>
+</div>
+<div class="callout" style="margin-top:20px">
+<div aria-hidden="true" class="callout-art"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M12 3.5 5 6.5v5.2c0 4.2 2.9 7.6 7 8.8 4.1-1.2 7-4.6 7-8.8V6.5Z"></path><path d="m9.2 12 2 2 3.6-4"></path></svg></div>
+<div>
+<h3>פרטיות — לפני הכול</h3>
+<p>כלי ענן מעבירים את המידע לשרתים חיצוניים. עם מידע אישי או רגיש הכלל פשוט: <span class="k">בספק? לא מעלים.</span></p>
+</div>
+</div>
+</section>
+<nav aria-label="המשך ניווט" class="nextprev">
+<a href="#tools"><small>לעיון מהיר</small><b>כל הכלים ←</b></a>
+<a href="#home"><small>חזרה</small><b>לדף הבית ←</b></a>
+</nav>
+</div>
+</div>
+</div>
+</section>
+
+<section class="page" id="copyright" aria-labelledby="copyright-title" tabindex="-1">
+  <div class="pagewrap">
+    <header class="phead">
+      <a class="back" href="#home"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M15 6 9 12l6 6"/></svg> חזרה לדף הבית</a>
+      <p class="phead-date">מידע משפטי</p>
+      <h1 id="copyright-title">זכויות יוצרים ותנאי שימוש</h1>
+      <p class="phead-intro">החומרים כאן נבנו עבורכם, ואתם מוזמנים להשתמש בהם בלמידה ובעבודה. כמה כללים פשוטים:</p>
+    </header>
+    <div class="layout layout--full">
+      <div class="pagebody">
+        <section class="block">
+          <div class="grid g2">
+            <div class="card">
+              <span class="tag">התכנים באתר</span>
+              <h3>הבעלות על החומרים</h3>
+              <p>כל התכנים באתר — טקסטים, מערכי המפגשים, הפרומפטים, האיורים והעיצוב — הם קניינה הרוחני של קארינה דרור ומוגנים בזכויות יוצרים.</p>
+              <p style="margin-bottom:0">© 2026 קארינה דרור. כל הזכויות שמורות.</p>
+            </div>
+            <div class="card">
+              <span class="tag">מה מותר</span>
+              <h3>שימוש אישי ולימודי</h3>
+              <ul>
+                <li>לקרוא, להוריד ולהדפיס לצורך הלמידה האישית שלכם</li>
+                <li>להשתמש בפרומפטים לדוגמה בעבודות הקורס ובעבודתכם</li>
+                <li>לשתף קישור לאתר עם עמיתים לקורס</li>
+              </ul>
+            </div>
+            <div class="card">
+              <span class="tag">מה אסור</span>
+              <h3>ללא אישור בכתב</h3>
+              <ul>
+                <li>העתקה, שכפול או הפצה של התכנים</li>
+                <li>שימוש מסחרי, לרבות העברת הדרכות על בסיס החומרים</li>
+                <li>הסרת סימני מותג או ייחוס התכנים לאחר</li>
+              </ul>
+            </div>
+            <div class="card">
+              <span class="tag">כלים חיצוניים</span>
+              <h3>סימני מסחר של צד שלישי</h3>
+              <p>שמות הכלים שמוזכרים באתר — ChatGPT, Claude, Gemini, Copilot, Perplexity, Canva, Gamma ואחרים — הם סימני מסחר של בעליהם. האזכור נועד לצורכי לימוד בלבד ואינו מהווה שיוך, חסות או המלצה מסחרית.</p>
+              <p style="margin-bottom:0" class="mini">צילומי המסך באתר משמשים להמחשה לימודית של ממשקי הכלים.</p>
+            </div>
+          </div>
+          <div class="callout" style="margin-top:16px">
+            <div class="callout-art" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M12 3.5 5 6.5v5.2c0 4.2 2.9 7.6 7 8.8 4.1-1.2 7-4.6 7-8.8V6.5Z"/><path d="m9.2 12 2 2 3.6-4"/></svg></div>
+            <div>
+              <h3>תוכן שנוצר בעזרת בינה מלאכותית</h3>
+              <p>חלק מהאיורים והדוגמאות באתר נוצרו בסיוע כלי בינה מלאכותית. כפי שלמדנו במפגש 5 — <span class="k">ראוי לציין זאת בגלוי</span>, וגם לזכור שהמצב המשפטי בישראל לגבי בעלות על תוצרי AI טרם הוסדר.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page" id="accessibility" aria-labelledby="access-title" tabindex="-1">
+  <div class="pagewrap">
+    <header class="phead">
+      <a class="back" href="#home"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M15 6 9 12l6 6"/></svg> חזרה לדף הבית</a>
+      <p class="phead-date">נגישות</p>
+      <h1 id="access-title">הצהרת נגישות</h1>
+      <p class="phead-intro">חשוב לנו שכל אחת ואחד יוכלו להשתמש באתר בנוחות. הנה מה שבנינו בשבילכם, ואיך להתאים את התצוגה.</p>
+    </header>
+    <div class="layout layout--full">
+      <div class="pagebody">
+        <section class="block">
+          <div class="grid g2">
+            <div class="card">
+              <h3>מה נגיש באתר</h3>
+              <ul>
+                <li>ניווט מלא במקלדת (Tab, Shift+Tab, Enter, Esc) עם סימון מיקוד ברור</li>
+                <li>קישור "דילוג לתוכן" בתחילת כל עמוד</li>
+                <li>מבנה כותרות היררכי ותגיות ARIA לקוראי מסך</li>
+                <li>ניגודיות צבעים העומדת בדרישת AA</li>
+                <li>טקסט חלופי לתמונות; איורים דקורטיביים מוסתרים מקוראי מסך</li>
+                <li>כיבוד העדפת המערכת להפחתת תנועה</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>תפריט הנגישות</h3>
+              <p>בראש כל עמוד, בכפתור "נגישות", אפשר להתאים את התצוגה:</p>
+              <ul>
+                <li>הגדלה והקטנה של גודל הטקסט</li>
+                <li>ניגודיות גבוהה</li>
+                <li>גופן קריא וריווח שורות מוגדל</li>
+                <li>הדגשת קישורים</li>
+                <li>עצירת אנימציות</li>
+                <li>איפוס כל ההגדרות</li>
+              </ul>
+              <p class="mini" style="margin-bottom:0">ההגדרות נשמרות בדפדפן שלכם בלבד.</p>
+            </div>
+          </div>
+          <div class="grid g2" style="margin-top:16px">
+            <div class="card">
+              <h3>תקן ורמת נגישות</h3>
+              <p>האתר נבנה בהתאם להנחיות WCAG 2.1 ברמה AA, ובהתאם לתקן הישראלי ת״י 5568.</p>
+              <p style="margin-bottom:0" class="mini">תאריך עדכון ההצהרה: אוקטובר 2026.</p>
+            </div>
+            <div class="card">
+              <h3>נתקלתם בבעיה?</h3>
+              <p>נתקלתם במשהו שלא עובד או קשה לשימוש? ספרו לי ואשמח לתקן.</p>
+              <p style="margin-bottom:0"><b>קארינה דרור</b>, מרצת הקורס<br><span class="mini">כתבו לי ואטפל בזה — דוא״ל: <span dir="ltr">[להשלים כתובת]</span></span></p>
+            </div>
+          </div>
+          <div class="callout" style="margin-top:16px">
+            <div class="callout-art" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="4.6" r="1.9"/><path d="M4.5 8.2c2.4.9 4.9 1.3 7.5 1.3s5.1-.4 7.5-1.3"/><path d="M12 9.5v5m0 0-3 6m3-6 3 6"/></svg></div>
+            <div>
+              <h3>מגבלות ידועות</h3>
+              <p>חלק מהתכנים מפנים לכלים חיצוניים (ChatGPT, Canva ואחרים) שאינם בשליטתנו, ורמת הנגישות בהם עשויה להיות שונה. <span class="k">אנו פועלים לשיפור מתמיד של האתר.</span></p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footin">
+    <div class="footlogo"><img src="data:image/png;base64,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" alt=""><b>קארינה דרור</b></div>
+    <p class="rights">© 2026 קארינה דרור · כל הזכויות שמורות. התכנים נועדו ללמידה אישית של תלמידי הקורס; אין להעתיק, להפיץ או לעשות בהם שימוש מסחרי ללא אישור בכתב. <a href="#copyright" data-nav="copyright">תנאי שימוש מלאים</a> · <a href="#accessibility" data-nav="accessibility">הצהרת נגישות</a></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  /* תמיכה בדפדפנים ישנים */
+  if(window.NodeList && !NodeList.prototype.forEach){ NodeList.prototype.forEach=Array.prototype.forEach; }
+  document.body.classList.add('js');
+
+  /* ---------- נגישות ---------- */
+  var net={setPaused:function(){},resize:function(){}};   /* מוחלף בהמשך במנוע האנימציה */
+  var root=document.documentElement, store=null;
+  try{ store=window.localStorage; }catch(e){ store=null; }
+  function save(k,v){ try{ if(store){ v===null?store.removeItem('a11y-'+k):store.setItem('a11y-'+k,v);} }catch(e){} }
+  function load(k){ try{ return store?store.getItem('a11y-'+k):null; }catch(e){ return null; } }
+
+  function setFs(n){
+    n=Math.max(0,Math.min(3,n));
+    if(n===0) root.removeAttribute('data-fs'); else root.setAttribute('data-fs',n);
+    save('fs',n===0?null:n);
+  }
+  function setToggle(name,on){
+    if(on) root.setAttribute('data-'+name,''); else root.removeAttribute('data-'+name);
+    save(name,on?'1':null);
+    var b=document.querySelector('[data-toggle="'+name+'"]');
+    if(b) b.setAttribute('aria-pressed',on?'true':'false');
+    if(name==='noanim') net.setPaused(on);
+  }
+  ['contrast','links','readable','spacing','noanim'].forEach(function(n){ if(load(n)) setToggle(n,true); });
+  if(load('fs')) setFs(parseInt(load('fs'),10));
+
+  document.querySelectorAll('[data-fsdir]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var d=parseInt(b.getAttribute('data-fsdir'),10);
+      var cur=parseInt(root.getAttribute('data-fs')||'0',10);
+      setFs(d===0?0:cur+d);
+    });
+  });
+  document.querySelectorAll('[data-toggle]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var n=b.getAttribute('data-toggle');
+      setToggle(n, b.getAttribute('aria-pressed')!=='true');
+    });
+  });
+  document.getElementById('accreset').addEventListener('click',function(){
+    setFs(0); ['contrast','links','readable','spacing','noanim'].forEach(function(n){ setToggle(n,false); });
+  });
+
+  /* ---------- תפריטים נפתחים ---------- */
+  function panel(btnId,panelId){
+    var btn=document.getElementById(btnId), pan=document.getElementById(panelId);
+    function close(){ pan.hidden=true; btn.setAttribute('aria-expanded','false'); }
+    function open(){ pan.hidden=false; btn.setAttribute('aria-expanded','true'); }
+    btn.addEventListener('click',function(e){ e.stopPropagation(); pan.hidden?open():close(); });
+    document.addEventListener('click',function(e){ if(!pan.hidden && !pan.contains(e.target) && e.target!==btn) close(); });
+    document.addEventListener('keydown',function(e){ if(e.key==='Escape' && !pan.hidden){ close(); btn.focus(); } });
+    pan.addEventListener('click',function(e){ if(e.target.closest('a')) close(); });
+    return {close:close};
+  }
+  var menuPanel=panel('menubtn','menu');
+  panel('accbtn','accpanel');
+
+  /* ---------- ניתוב ---------- */
+  var PAGES=['home', 'lesson1', 'lesson2', 'lesson3', 'lesson4', 'lesson5', 'project', 'prompts', 'tools', 'checklist', 'copyright', 'accessibility'];
+  var TITLES={
+    home: 'מנטורינג מתקדם בשילוב AI',
+    lesson1: 'מפגש 1 · צ׳אטבוטים ופרומפטים',
+    lesson2: 'מפגש 2 · מצגות, אתרים ואפליקציות',
+    lesson3: 'מפגש 3 · אקסל, סוכנים ואוטומציה',
+    lesson4: 'מפגש 4 · תמונה, וידאו וקול',
+    lesson5: 'מפגש 5 · אתיקה ואימות מידע',
+    project: 'הפרויקט המסכם',
+    prompts: 'טכניקות פרומפט',
+    tools: 'כל הכלים',
+    checklist: 'רשימת בדיקה',
+    copyright: 'זכויות יוצרים',
+    accessibility: 'הצהרת נגישות'
+  };
+  function show(id,focus){
+    if(PAGES.indexOf(id)===-1) id='home';
+    PAGES.forEach(function(p){
+      var el=document.getElementById(p);
+      if(el) el.classList.toggle('active', p===id);
+    });
+    document.querySelectorAll('[data-nav]').forEach(function(a){
+      if(a.getAttribute('data-nav')===id) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current');
+    });
+    document.title=TITLES[id]+' | קארינה דרור';
+    net.setPaused(id!=='home' || root.hasAttribute('data-noanim'));
+    if(focus){
+      window.scrollTo(0,0);
+      var t=document.getElementById(id); if(t) t.focus({preventScroll:true});
+    }
+    spy();
+  }
+  function route(focus){
+    var hash=(location.hash||'#home').slice(1);
+    if(PAGES.indexOf(hash)!==-1){ show(hash,focus); return; }
+    var el=document.getElementById(hash);
+    if(el){
+      var pg=el.closest?el.closest('.page'):null;
+      if(pg){ show(pg.id,false); setTimeout(function(){ el.scrollIntoView(); },30); return; }
+    }
+    show('home',focus);
+  }
+  window.addEventListener('hashchange',function(){ route(true); });
+  route(false);
+
+  /* ---------- ניווט צדדי + סימון מיקום ---------- */
+  var spyTimer=null;
+  function spy(){
+    var page=document.querySelector('.page.active'); if(!page) return;
+    var links=page.querySelectorAll('.sidenav a'); if(!links.length) return;
+    var best=null, bestTop=-1e9;
+    links.forEach(function(a){
+      var el=document.getElementById(a.getAttribute('data-jump'));
+      if(!el) return;
+      var top=el.getBoundingClientRect().top-120;
+      if(top<=0 && top>bestTop){ bestTop=top; best=a; }
+    });
+    links.forEach(function(a){ a.removeAttribute('aria-current'); });
+    (best||links[0]).setAttribute('aria-current','true');
+  }
+  window.addEventListener('scroll',function(){
+    if(spyTimer) return;
+    spyTimer=setTimeout(function(){ spyTimer=null; spy(); },120);
+  },{passive:true});
+
+  /* ---------- העתקת פרומפטים ---------- */
+  document.querySelectorAll('.copy').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var pre=btn.parentElement.querySelector('pre'); if(!pre) return;
+      var text=pre.innerText;
+      var done=function(){
+        btn.textContent='הועתק'; btn.dataset.done='1';
+        setTimeout(function(){ btn.textContent='העתקה'; btn.dataset.done=''; },1800);
+      };
+      if(navigator.clipboard && window.isSecureContext){
+        navigator.clipboard.writeText(text).then(done).catch(function(){ fallback(text,done,btn); });
+      } else { fallback(text,done,btn); }
+    });
+  });
+  function fallback(text,done,btn){
+    var ta=document.createElement('textarea');
+    ta.value=text; ta.style.position='fixed'; ta.style.opacity='0';
+    document.body.appendChild(ta); ta.select();
+    try{ document.execCommand('copy'); done(); }
+    catch(e){ btn.textContent='ההעתקה נכשלה — סמנו והעתיקו ידנית'; }
+    document.body.removeChild(ta);
+  }
+
+  /* ---------- רשת נוירונים מגיבה לעכבר ---------- */
+  function NeuralNet(canvas){
+    var ctx=canvas.getContext('2d'), nodes=[], links=[], raf=null, paused=false, W=0,H=0,DPR=1;
+    var mouse={x:-9999,y:-9999,active:false};
+    var reduce=window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    var BRAIN='M62,10 C40,4 20,14 16,32 C4,40 4,60 16,68 C18,86 40,96 58,90 C70,98 90,94 96,80 C112,74 116,52 106,40 C108,22 92,8 76,10 C72,4 66,4 62,10 Z';
+    var path=new Path2D(BRAIN);
+
+    function sample(count){
+      var pts=[], guard=0, off=document.createElement('canvas').getContext('2d');
+      var scale=Math.min(W,H)/140, ox=W/2-64*scale, oy=H/2-52*scale;
+      while(pts.length<count && guard<count*160){
+        guard++;
+        var x=Math.random()*128, y=Math.random()*104;
+        off.setTransform(1,0,0,1,0,0);
+        if(off.isPointInPath(path,x,y)){
+          pts.push({x:ox+x*scale, y:oy+y*scale, bx:ox+x*scale, by:oy+y*scale,
+                    p:Math.random()*Math.PI*2, s:0.5+Math.random()*0.8});
+        }
+      }
+      return pts;
+    }
+    function build(){
+      var area=W*H, count=Math.max(38, Math.min(86, Math.round(area/13000)));
+      nodes=sample(count);
+      links=[];
+      for(var i=0;i<nodes.length;i++){
+        var d=[];
+        for(var j=0;j<nodes.length;j++){ if(i!==j){
+          var dx=nodes[i].bx-nodes[j].bx, dy=nodes[i].by-nodes[j].by;
+          d.push({j:j, dist:dx*dx+dy*dy});
+        }}
+        d.sort(function(a,b){ return a.dist-b.dist; });
+        for(var k=0;k<3 && k<d.length;k++){ if(d[k].j>i) links.push([i,d[k].j]); }
+      }
+    }
+    function resize(){
+      var r=canvas.getBoundingClientRect();
+      DPR=Math.min(window.devicePixelRatio||1,2);
+      W=r.width; H=r.height;
+      canvas.width=Math.round(W*DPR); canvas.height=Math.round(H*DPR);
+      ctx.setTransform(DPR,0,0,DPR,0,0);
+      build(); draw(0);
+    }
+    function draw(t){
+      ctx.clearRect(0,0,W,H);
+      var hc=document.documentElement.hasAttribute('data-contrast');
+      var lineCol=hc?'rgba(255,228,77,':'rgba(111,211,227,';
+      for(var i=0;i<nodes.length;i++){
+        var n=nodes[i];
+        if(!reduce && !paused){
+          n.x=n.bx+Math.sin(t/2600+n.p)*6*n.s;
+          n.y=n.by+Math.cos(t/2300+n.p)*6*n.s;
+        } else { n.x=n.bx; n.y=n.by; }
+        if(mouse.active){
+          var dx=n.x-mouse.x, dy=n.y-mouse.y, dist=Math.sqrt(dx*dx+dy*dy);
+          if(dist<130 && dist>0.1){
+            var push=(130-dist)/130*26;
+            n.x+=dx/dist*push; n.y+=dy/dist*push;
+          }
+        }
+      }
+      ctx.lineWidth=1;
+      for(var l=0;l<links.length;l++){
+        var a=nodes[links[l][0]], b=nodes[links[l][1]];
+        var mx=(a.x+b.x)/2, my=(a.y+b.y)/2;
+        var near=mouse.active?Math.max(0,1-Math.hypot(mx-mouse.x,my-mouse.y)/190):0;
+        ctx.strokeStyle=lineCol+(0.14+near*0.5)+')';
+        ctx.beginPath(); ctx.moveTo(a.x,a.y); ctx.lineTo(b.x,b.y); ctx.stroke();
+      }
+      for(var m=0;m<nodes.length;m++){
+        var p=nodes[m];
+        var g=mouse.active?Math.max(0,1-Math.hypot(p.x-mouse.x,p.y-mouse.y)/170):0;
+        ctx.fillStyle=lineCol+(0.5+g*0.5)+')';
+        ctx.beginPath(); ctx.arc(p.x,p.y,1.6+g*2.4,0,Math.PI*2); ctx.fill();
+      }
+    }
+    function loop(t){ draw(t); raf=requestAnimationFrame(loop); }
+    function start(){ if(raf===null && !paused){ raf=requestAnimationFrame(loop); } }
+    function stop(){ if(raf!==null){ cancelAnimationFrame(raf); raf=null; } }
+
+    canvas.parentElement.addEventListener('mousemove',function(e){
+      var r=canvas.getBoundingClientRect();
+      mouse.x=e.clientX-r.left; mouse.y=e.clientY-r.top; mouse.active=true;
+      if(paused) draw(performance.now());
+    });
+    canvas.parentElement.addEventListener('mouseleave',function(){ mouse.active=false; });
+    window.addEventListener('resize',function(){ resize(); },{passive:true});
+    document.addEventListener('visibilitychange',function(){ document.hidden?stop():start(); });
+
+    resize();
+    if(reduce) paused=true; else start();
+
+    return {
+      setPaused:function(v){ paused=v; if(v){ stop(); draw(performance.now()); } else { start(); } },
+      resize:resize
+    };
+  }
+  var canvasEl=document.getElementById('neuralnet');
+  if(canvasEl) net=NeuralNet(canvasEl);
+  net.setPaused(root.hasAttribute('data-noanim') || !document.getElementById('home').classList.contains('active'));
+})();
+</script>
+</body>
+</html>
